@@ -1,0 +1,251 @@
+// OFBCore/Config/Localization/L10n_RU.swift
+// Russian Localization
+
+import Foundation
+
+enum L10n_RU {
+    static let dict: [String: String] = [
+        // Menu Bar
+        "menu_connect": "Подключить",
+        "menu_disconnect": "Отключить",
+        "menu_battery": "Заряд батареи",
+        "menu_left": "Левый наушник",
+        "menu_right": "Правый наушник",
+        "menu_case": "Кейс",
+        "menu_reading_battery": "Чтение заряда...",
+        "menu_noise_control": "Шумоподавление",
+        "menu_anc_off": "Отключить",
+        "menu_anc_on": "Шумоподавление",
+        "menu_anc_awareness": "Прозрачность",
+        "menu_settings": "Настройки…",
+        "menu_bugreport": "Отчет об ошибке…",
+        "menu_quit": "Выход",
+        "menu_equalizer": "🎵 Эквалайзер",
+        "menu_dual_connect": "🔗 Двойное подключение",
+        "menu_dual_connect_enabled": "Двойное подключение включено",
+
+        // Tabs
+        "tab_select_device": "Выбор устройства",
+        "tab_device_info": "Информация об устройстве",
+        "tab_sound_quality": "Качество звука и EQ",
+        "tab_gestures": "Управление жестами",
+        "tab_dual_connect": "Двойное подключение",
+        "tab_other_settings": "Другие настройки",
+        "tab_supported_devices": "Поддерживаемые устройства",
+        "tab_app_settings": "Интерфейс",
+        "tab_automation": "Автоматизация",
+        "tab_hotkeys": "Горячие клавиши",
+        "tab_macos_settings": "Настройки macOS",
+        "tab_buy_me_coffee": "Donate Me",
+        "tab_about": "О программе",
+        "buy_me_coffee_title": "Donate Me ☕",
+        "buy_me_coffee_desc": "Если FreebudsMAC помогает вам управлять наушниками Huawei / HONOR на macOS, поддержите автора!",
+
+        // Supported Devices
+        "supported_devices_title": "Поддерживаемые модели наушников",
+        "supported_devices_subtitle": "Полный список наушников HUAWEI и HONOR с нативной поддержкой",
+        "devices_count_unit": "моделей",
+        "search_placeholder": "Поиск модели...",
+        "filter_all": "Все",
+        "supported_list_section": "Список поддерживаемых моделей",
+        "wear_status": "Статус ношения",
+
+        // ANC Levels
+        "anc_lvl_comfort": "Комфортный",
+        "anc_lvl_normal": "Обычный",
+        "anc_lvl_ultra": "Ультра",
+        "anc_lvl_dynamic": "Динамический",
+        "anc_lvl_voice_boost": "Усиление голоса",
+        "anc_levels_title": "Уровень шумоподавления",
+        "anc_awareness_level_title": "Уровень прозрачности",
+
+        // EQ Presets
+        "eq_preset_default": "По умолчанию",
+        "eq_preset_hardbass": "Усиление басов",
+        "eq_preset_treble": "Усиление ВЧ",
+        "eq_preset_voices": "Голос",
+        "eq_preset_symphony": "Симфония",
+        "eq_preset_hi_fi_live": "Hi-Fi Live",
+
+        // Gestures
+        "gesture_pause": "Воспроизведение / Пауза",
+        "gesture_next": "Следующий трек",
+        "gesture_prev": "Предыдущий трек",
+        "gesture_assistant": "Голосовой ассистент",
+        "gesture_switch_anc": "Переключение шумоподавления",
+        "gesture_change_volume": "Регулировка громкости",
+        "gesture_off": "Отключено",
+
+        // Device Selection
+        "auto_setup": "Автонастройка",
+        "auto_select": "Автовыбор поддерживаемых наушников",
+        "manual_select_hint": "При отключении автовыбора вы можете выбрать любое сопряженное Bluetooth-устройство (для устройств вне списка будет использоваться базовый драйвер).",
+        "unlisted_generic_tag": "Базовый драйвер",
+        "select_device": "Выбрать устройство",
+        "scanning_devices": "Поиск сопряженных устройств Bluetooth...",
+        "no_devices_found": "Сопряженные устройства Bluetooth не найдены.",
+        "no_devices_hint": "Сначала выполните сопряжение наушников HUAWEI / HONOR в Системных настройках macOS -> Bluetooth.",
+        "macos_connected": "Подключено в macOS",
+        "selected": "Выбрано",
+        "select": "Выбрать",
+        "unsupported": "Не поддерживается",
+        "refresh_devices": "Обновить",
+
+        // Device Info
+        "not_connected_title": "Наушники не подключены по Bluetooth",
+        "not_connected_hint": "Пожалуйста, включите и подключите наушники в Системных настройках macOS -> Bluetooth.",
+        "device_overview": "Обзор устройства",
+        "device_model": "Модель устройства",
+        "mac_address": "MAC-адрес",
+        "status": "Статус",
+        "firmware_version": "Версия прошивки",
+        "serial_number": "Серийный номер",
+        "battery_status": "Состояние батареи",
+        "battery": "Батарея",
+        "left_headphone": "Левый наушник",
+        "right_headphone": "Правый наушник",
+        "charging_case": "Кейс",
+        "charging_status": "Статус зарядки",
+        "charging": "⚡ Заряжается",
+        "not_charging": "Не заряжается",
+        "wear_detection": "Определение ношения",
+        "in_ear": "В ухе",
+        "out_of_ear": "Вне уха",
+        "left_ear": "Левое ухо",
+        "right_ear": "Правое ухо",
+        "none": "Нет",
+        "unknown": "Неизвестно",
+
+        // Sound Quality
+        "sound_quality_preference": "Приоритет качества звука",
+        "priority_mode": "Режим приоритета",
+        "prioritize_sound_quality": "Приоритет качества звука",
+        "prioritize_connection": "Приоритет стабильности подключения",
+        "equalizer_presets": "Пресеты эквалайзера",
+        "preset": "Пресет",
+        "create_custom_preset": "Создать пользовательский пресет…",
+        "delete_preset": "Удалить пресет",
+        "ten_band_equalizer": "10-полосный эквалайзера",
+        "save": "Сохранить",
+        "undo": "Отменить",
+        "reset": "Сбросить",
+        "export_json": "Экспорт в JSON…",
+        "import_json": "Импорт из JSON…",
+        "not_connected_eq_hint": "Пожалуйста, подключите наушники для настройки 10-полосного эквалайзера и пресетов.",
+        "create_preset_title": "Создать пользовательский пресет",
+        "preset_name": "Название пресета",
+        "create": "Создать",
+        "cancel": "Отмена",
+        "enter_preset_name": "Введите название нового пресета эквалайзера.",
+
+        // Gestures
+        "double_tap_gestures": "Двойное касание",
+        "triple_tap_gestures": "Тройное касание",
+        "long_press_gestures": "Долгое нажатие",
+        "swipe_gesture": "Проведение (свайп)",
+        "left_earbud": "Левый наушник",
+        "right_earbud": "Правый наушник",
+        "stem_swipe": "Свайп по ножке",
+        "not_connected_gesture_hint": "Пожалуйста, подключите наушники для настройки жестов.",
+
+        // Dual Connect
+        "multi_point_connection": "Многоточечное подключение (Dual-Connect)",
+        "enable_dual_connect": "Включить двойное подключение",
+        "dual_connect_description": "Двойное подключение позволяет наушникам одновременно оставаться на связи с двумя устройствами Bluetooth (например, телефоном и Mac).",
+        "not_connected_dual_hint": "Пожалуйста, подключите наушники для настройки двойного подключения.",
+
+        // Device Settings
+        "audio_latency": "Аудио и задержка",
+        "low_latency_mode": "Режим низкой задержки (Игровой)",
+        "auto_pause": "Автопауза при снятии",
+
+        // App Settings
+        "language": "Язык",
+        "lang_system": "По системе",
+        "tray_options": "Настройки строки меню",
+        "show_battery_in_tray": "Показывать % заряда в строке меню",
+        "show_left_battery_in_tray": "Показывать Левый % (L: %)",
+        "show_right_battery_in_tray": "Показывать Правый % (R: %)",
+        "show_case_battery_in_tray": "Показывать Кейс % (C: %)",
+        "show_equalizer_in_tray": "Меню эквалайзера в строке меню",
+        "show_dual_connect_in_tray": "Меню двойного подключения в строке меню",
+        "run_in_background": "Работать в фоновом режиме (Строка меню)",
+        "notifications_section": "Уведомления и предупреждения",
+        "notify_low_battery": "Предупреждения о низком заряде (20% и 10%)",
+        "notify_low_battery_hint": "Получать системные уведомления при снижении заряда наушников или кейса до 20% и 10%.",
+
+        // Automation
+        "automation_title": "Автоматизация и интеграция",
+        "auto_pause_media": "Автопауза мультимедиа при снятии наушника",
+        "auto_connect_on_launch": "Автоподключение к наушникам при запуске",
+
+        // Hotkeys
+        "global_hotkeys_title": "Глобальные горячие клавиши",
+        "hotkeys_subtitle": "Управляйте наушниками Huawei / HONOR мгновенно в любом месте macOS с помощью горячих клавиш.",
+        "hotkey_cycle_anc": "Переключение шумоподавления (ANC)",
+        "hotkey_toggle_connect": "Подключить / Отключить",
+        "permissions_required_title": "Требуется доступ к Универсальному доступу",
+        "accessibility_permission_hint": "Глобальным горячим клавишам требуется доступ к специальным возможностям macOS для работы в фоне.",
+        "accessibility_active": "Доступ к Универсальному доступу предоставлен",
+        "accessibility_active_desc": "Глобальные горячие клавиши активны и работают в фоновом режиме.",
+        "active_shortcuts_section": "Активные комбинации клавиш",
+        "test_shortcut": "Проверить",
+        "config_low_latency": "Игровой режим с низкой задержкой",
+        "open_accessibility_settings": "Открыть настройки Универсального доступа",
+
+        // macOS Settings & Permissions
+        "macos_integration_title": "Интеграция с macOS",
+        "launch_at_login": "Запускать FreebudsMAC автоматически при входе в систему (LaunchAgent)",
+        "launchagent_enabled": "Автозапуск включен",
+        "launchagent_disabled": "Автозапуск выключен",
+        "permissions_section": "Системные разрешения",
+        "perm_bluetooth_title": "Доступ к Bluetooth",
+        "perm_bluetooth_desc": "Требуется для поиска и подключения к наушникам FreeBuds.",
+        "perm_notifications_title": "Уведомления",
+        "perm_notifications_desc": "Требуется для предупреждений о низком заряде батареи (20% и 10%).",
+        "perm_notification_banner_tip": "💡 Совет: В Системных настройках macOS → Уведомления → FreebudsMAC выберите стиль «Баннеры» вместо «Нет», чтобы видеть уведомления на экране.",
+        "perm_accessibility_title": "Универсальный доступ (Accessibility)",
+        "perm_accessibility_desc": "Требуется для работы глобальных горячих клавиш переключения ANC и звука.",
+        "perm_status_granted": "Предоставлено",
+        "perm_status_denied": "Отклонено",
+        "perm_status_not_determined": "Не запрошено",
+        "perm_btn_request": "Запросить",
+        "perm_btn_grant": "Предоставить",
+        "perm_btn_open_settings": "Настройки",
+        "perm_refresh_btn": "Обновить статус",
+        "test_notification_btn": "Отправить тестовое уведомление",
+        "test_notification_sent": "Уведомление отправлено! (Скроется через 3 сек)",
+        "quick_links_title": "Быстрые ссылки системных настроек",
+        "open_bluetooth_settings": "Открыть настройки Bluetooth",
+        "open_notification_settings": "Открыть настройки уведомлений",
+
+        // About
+        "about_app_description": "Нативное приложение с открытым исходным кодом для управления наушниками HUAWEI FreeBuds и HONOR Earbuds на macOS.",
+        "about_unlisted_devices_title": "Поддержка устройств вне списка",
+        "about_unlisted_devices_hint": "Включает базовый драйвер и BLE-сканер батареи для поддержки наушников HUAWEI, HONOR и других TWS (без гарантий).",
+        "github_repo": "Репозиторий GitHub",
+        "license": "Лицензия (GPL-3.0)",
+
+        // Headphones & Application sections
+        "headphones_section": "Наушники",
+        "application_section": "Приложение",
+
+        // State descriptions
+        "state_stopped": "Не запущено",
+        "state_disconnected": "Отключено",
+        "state_wait": "Подключение...",
+        "state_connected": "Подключено",
+        "state_failed": "Ошибка подключения",
+        "state_destroyed": "Закрыто",
+        "state_connected_limited": "Подключено (Ограниченно)",
+        "connected_limited_title": "Bluetooth подключен (Ограниченный режим)",
+        "connected_limited_hint": "Аудио работает через macOS. Протокол RFCOMM временно недоступен. Нажмите «Повторить» для повторного подключения.",
+        "retry": "Повторить",
+
+        // Low Battery
+        "low_battery_critical_title": "⚠️ Критический заряд",
+        "low_battery_critical_body": "Заряд батареи %d%%. Пожалуйста, зарядите наушники.",
+        "low_battery_title": "🔋 Низкий заряд",
+        "low_battery_body": "Заряд батареи %d%%."
+    ]
+}

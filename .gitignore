@@ -1,0 +1,57 @@
+# ==========================================
+# Custom Document & Script rules
+# ==========================================
+*.md
+**/*.md
+!README.md
+!readme.md
+!ReadMe/**
+!ReadMe/**/*
+!**/README.md
+!**/readme.md
+!**/README_*.md
+!**/readme_*.md
+
+*.sh
+**/*.sh
+
+# Standalone scratch/test scripts
+rfcomm_test.swift
+
+# ==========================================
+# macOS System Files
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ==========================================
+# Swift Package Manager & Xcode
+# ==========================================
+.build/
+Packages/
+Package.pins
+.swiftpm/
+DerivedData/
+
+# Xcode User Data & State
+*.xcuserstate
+project.xcworkspace/xcuserdata/
+*.xcuserdatad/
+xcuserdata/
+
+# ==========================================
+# Build & Distribution Artifacts
+# ==========================================
+dist/
+build/
+*.app
+*.dmg
+*.pkg
+*.dSYM/
+*.dSYM.zip
+*.ipa

@@ -1,0 +1,251 @@
+// OFBCore/Config/Localization/L10n_VI.swift
+// Vietnamese Localization
+
+import Foundation
+
+enum L10n_VI {
+    static let dict: [String: String] = [
+        // Menu Bar
+        "menu_connect": "Kết nối",
+        "menu_disconnect": "Ngắt kết nối",
+        "menu_battery": "Thời lượng Pin",
+        "menu_left": "Tai trái",
+        "menu_right": "Tai phải",
+        "menu_case": "Hộp sạc",
+        "menu_reading_battery": "Đang đọc pin...",
+        "menu_noise_control": "Kiểm soát tiếng ồn",
+        "menu_anc_off": "Tắt chống ồn",
+        "menu_anc_on": "Chống ồn chủ động",
+        "menu_anc_awareness": "Xuyên âm",
+        "menu_settings": "Cài đặt…",
+        "menu_bugreport": "Báo lỗi (Bugreport)…",
+        "menu_quit": "Thoát ứng dụng",
+        "menu_equalizer": "🎵 Bộ chỉnh âm",
+        "menu_dual_connect": "🔗 Kết nối đôi",
+        "menu_dual_connect_enabled": "Bật Kết nối đôi",
+
+        // Tabs
+        "tab_select_device": "Chọn thiết bị",
+        "tab_device_info": "Thông tin thiết bị",
+        "tab_sound_quality": "Chất lượng & EQ",
+        "tab_gestures": "Thao tác cử chỉ",
+        "tab_dual_connect": "Kết nối đôi",
+        "tab_other_settings": "Cài đặt khác",
+        "tab_supported_devices": "Tai nghe hỗ trợ",
+        "tab_app_settings": "Giao diện",
+        "tab_automation": "Tự động",
+        "tab_hotkeys": "Phím tắt",
+        "tab_macos_settings": "Cài đặt macOS",
+        "tab_buy_me_coffee": "Donate Me",
+        "tab_about": "Giới thiệu",
+        "buy_me_coffee_title": "Donate Me ☕",
+        "buy_me_coffee_desc": "Nếu FreebudsMAC giúp bạn quản lý tai nghe Huawei / HONOR mượt mà trên macOS, hãy cân nhắc mời tác giả một ly cà phê nhé!",
+
+        // Supported Devices
+        "supported_devices_title": "Danh Sách Tai Nghe Được Hỗ Trợ",
+        "supported_devices_subtitle": "Toàn bộ danh sách các dòng tai nghe HUAWEI & HONOR được hỗ trợ",
+        "devices_count_unit": "mẫu tai nghe",
+        "search_placeholder": "Tìm tên tai nghe...",
+        "filter_all": "Tất cả",
+        "supported_list_section": "Danh sách thiết bị",
+        "wear_status": "Trạng thái đeo",
+
+        // ANC Levels
+        "anc_lvl_comfort": "Êm ái",
+        "anc_lvl_normal": "Thông thường",
+        "anc_lvl_ultra": "Siêu cấp / Gắt",
+        "anc_lvl_dynamic": "Tự động (Dynamic)",
+        "anc_lvl_voice_boost": "Tăng cường giọng nói",
+        "anc_levels_title": "Cấp độ chống ồn",
+        "anc_awareness_level_title": "Cấp độ xuyên âm",
+
+        // EQ Presets
+        "eq_preset_default": "Mặc định",
+        "eq_preset_hardbass": "Tăng trầm (Bass-boost)",
+        "eq_preset_treble": "Tăng bổng (Treble-boost)",
+        "eq_preset_voices": "Giọng nói (Voices)",
+        "eq_preset_symphony": "Giao hưởng (Symphony)",
+        "eq_preset_hi_fi_live": "Hi-Fi Live",
+
+        // Gestures
+        "gesture_pause": "Phát / Tạm dừng",
+        "gesture_next": "Bài tiếp theo",
+        "gesture_prev": "Bài trước đó",
+        "gesture_assistant": "Trợ lý giọng nói",
+        "gesture_switch_anc": "Chuyển chế độ chống ồn",
+        "gesture_change_volume": "Điều chỉnh âm lượng",
+        "gesture_off": "Tắt thao tác",
+
+        // Device Selection
+        "auto_setup": "Cài đặt tự động",
+        "auto_select": "Tự động chọn tai nghe được hỗ trợ",
+        "manual_select_hint": "Khi tắt Tự động chọn, bạn có thể chọn thủ công bất kỳ tai nghe Bluetooth nào (tai nghe ngoài danh mục sẽ dùng Driver tổng quát).",
+        "unlisted_generic_tag": "Driver tổng quát",
+        "select_device": "Chọn thiết bị",
+        "scanning_devices": "Đang quét thiết bị Bluetooth đã ghép đôi...",
+        "no_devices_found": "Không tìm thấy thiết bị Bluetooth đã ghép đôi.",
+        "no_devices_hint": "Vui lòng ghép đôi tai nghe HUAWEI / HONOR trong Cài đặt Hệ thống macOS -> Bluetooth trước.",
+        "macos_connected": "macOS Đã kết nối",
+        "selected": "Đã chọn",
+        "select": "Chọn",
+        "unsupported": "Không hỗ trợ",
+        "refresh_devices": "Làm mới",
+
+        // Device Info
+        "not_connected_title": "Tai nghe chưa kết nối Bluetooth với macOS",
+        "not_connected_hint": "Vui lòng bật và kết nối tai nghe của bạn trong Cài đặt Hệ thống macOS -> Bluetooth.",
+        "device_overview": "Tổng quan thiết bị",
+        "device_model": "Mẫu thiết bị",
+        "mac_address": "Địa chỉ MAC",
+        "status": "Trạng thái",
+        "firmware_version": "Phiên bản Firmware",
+        "serial_number": "Số seri",
+        "battery_status": "Trạng thái Pin",
+        "battery": "Pin",
+        "left_headphone": "Tai nghe trái",
+        "right_headphone": "Tai nghe phải",
+        "charging_case": "Hộp sạc",
+        "charging_status": "Trạng thái sạc",
+        "charging": "⚡ Đang sạc",
+        "not_charging": "Không sạc",
+        "wear_detection": "Phát hiện đeo tai",
+        "in_ear": "Đang đeo",
+        "out_of_ear": "Không đeo",
+        "left_ear": "Tai trái",
+        "right_ear": "Tai phải",
+        "none": "Không có",
+        "unknown": "Không rõ",
+
+        // Sound Quality
+        "sound_quality_preference": "Ưu tiên chất lượng âm thanh",
+        "priority_mode": "Chế độ ưu tiên",
+        "prioritize_sound_quality": "Ưu tiên Chất lượng Âm thanh",
+        "prioritize_connection": "Ưu tiên Độ ổn định Kết nối",
+        "equalizer_presets": "Bộ chỉnh âm (Presets)",
+        "preset": "Preset",
+        "create_custom_preset": "Tạo Preset tùy chỉnh…",
+        "delete_preset": "Xóa Preset",
+        "ten_band_equalizer": "Bộ chỉnh âm 10-band",
+        "save": "Lưu",
+        "undo": "Hoàn tác",
+        "reset": "Đặt lại",
+        "export_json": "Xuất JSON…",
+        "import_json": "Nhập JSON…",
+        "not_connected_eq_hint": "Vui lòng kết nối tai nghe để điều chỉnh 10-band EQ và Presets.",
+        "create_preset_title": "Tạo Preset tùy chỉnh",
+        "preset_name": "Tên Preset",
+        "create": "Tạo",
+        "cancel": "Hủy",
+        "enter_preset_name": "Nhập tên cho preset chỉnh âm mới.",
+
+        // Gestures
+        "double_tap_gestures": "Chạm đúp",
+        "triple_tap_gestures": "Chạm ba lần",
+        "long_press_gestures": "Nhấn giữ",
+        "swipe_gesture": "Vuốt thân tai",
+        "left_earbud": "Tai trái",
+        "right_earbud": "Tai phải",
+        "stem_swipe": "Vuốt thân tai",
+        "not_connected_gesture_hint": "Vui lòng kết nối tai nghe để cài đặt thao tác cử chỉ.",
+
+        // Dual Connect
+        "multi_point_connection": "Kết nối đa điểm (Dual-Connect)",
+        "enable_dual_connect": "Bật Kết nối đôi",
+        "dual_connect_description": "Kết nối đôi cho phép tai nghe duy trì kết nối với 2 thiết bị Bluetooth đồng thời (VD: điện thoại và Mac).",
+        "not_connected_dual_hint": "Vui lòng kết nối tai nghe để cài đặt Kết nối đôi.",
+
+        // Device Settings
+        "audio_latency": "Âm thanh & Độ trễ",
+        "low_latency_mode": "Chế độ Độ trễ thấp (Gaming)",
+        "auto_pause": "Tự động Tạm dừng khi tháo tai nghe",
+
+        // App Settings
+        "language": "Ngôn ngữ",
+        "lang_system": "Theo hệ thống",
+        "tray_options": "Tùy chọn Menu Bar",
+        "show_battery_in_tray": "Hiển thị % pin trên menu bar",
+        "show_left_battery_in_tray": "Hiện % Pin Tai Trái (L: %)",
+        "show_right_battery_in_tray": "Hiện % Pin Tai Phải (R: %)",
+        "show_case_battery_in_tray": "Hiện % Pin Hộp Sạc (C: %)",
+        "show_equalizer_in_tray": "Hiển thị submenu Bộ chỉnh âm trên tray",
+        "show_dual_connect_in_tray": "Hiển thị submenu Kết nối đôi trên tray",
+        "run_in_background": "Chạy ẩn ứng dụng trên Menu Bar (Khay hệ thống)",
+        "notifications_section": "Thông báo & Cảnh báo",
+        "notify_low_battery": "Cảnh báo khi tai nghe pin yếu (20% & 10%)",
+        "notify_low_battery_hint": "Nhận thông báo hệ thống khi pin tai nghe hoặc hộp sạc giảm xuống mức 20% và 10%.",
+
+        // Automation
+        "automation_title": "Tự động hóa & Tích hợp",
+        "auto_pause_media": "Tự động tạm dừng nhạc/video khi tháo tai nghe khỏi tai",
+        "auto_connect_on_launch": "Tự động kết nối tai nghe khi mở ứng dụng",
+
+        // Hotkeys
+        "global_hotkeys_title": "Phím tắt toàn hệ thống",
+        "hotkeys_subtitle": "Điều khiển tai nghe Huawei / HONOR tức thì ở bất kỳ đâu trên macOS bằng phím tắt toàn hệ thống.",
+        "hotkey_cycle_anc": "Chuyển chế độ chống ồn (ANC)",
+        "hotkey_toggle_connect": "Bật / Tắt kết nối tai nghe",
+        "permissions_required_title": "Cần cấp quyền Trợ năng",
+        "accessibility_permission_hint": "Phím tắt toàn hệ thống cần quyền Truy cập (Accessibility) trên macOS để lắng nghe phím khi chạy ẩn.",
+        "accessibility_active": "Đã cấp Quyền Trợ năng (Accessibility)",
+        "accessibility_active_desc": "Phím tắt toàn hệ thống đang hoạt động ổn định ở chế độ chạy nền.",
+        "active_shortcuts_section": "Danh sách tổ hợp phím tắt hoạt động",
+        "test_shortcut": "Chạy thử",
+        "config_low_latency": "Chế độ chơi game độ trễ thấp",
+        "open_accessibility_settings": "Mở Cài đặt Quyền Trợ năng",
+
+        // macOS Settings & Permissions
+        "macos_integration_title": "Tích hợp hệ thống macOS",
+        "launch_at_login": "Tự động khởi động FreebudsMAC khi đăng nhập macOS (LaunchAgent)",
+        "launchagent_enabled": "Đã bật tự động khởi động",
+        "launchagent_disabled": "Đã tắt tự động khởi động",
+        "permissions_section": "Quyền hệ thống",
+        "perm_bluetooth_title": "Quyền Bluetooth",
+        "perm_bluetooth_desc": "Dùng để quét và kết nối với tai nghe FreeBuds.",
+        "perm_notifications_title": "Quyền Thông báo",
+        "perm_notifications_desc": "Dùng để gửi cảnh báo khi tai nghe pin yếu (20% & 10%).",
+        "perm_notification_banner_tip": "💡 Mẹo: Trong Cài đặt macOS → Thông báo → FreebudsMAC, hãy chọn Kiểu cảnh báo là \"Biểu ngữ\" (Banners) thay vì \"Không có\" (None) để hiện thông báo ở góc màn hình.",
+        "perm_accessibility_title": "Quyền Trợ năng (Accessibility)",
+        "perm_accessibility_desc": "Dùng cho phím tắt toàn cục chuyển đổi ANC và âm thanh.",
+        "perm_status_granted": "Đã cấp",
+        "perm_status_denied": "Bị từ chối",
+        "perm_status_not_determined": "Chưa xin quyền",
+        "perm_btn_request": "Xin quyền",
+        "perm_btn_grant": "Cấp quyền",
+        "perm_btn_open_settings": "Cài đặt",
+        "perm_refresh_btn": "Làm mới",
+        "test_notification_btn": "Gửi thông báo thử",
+        "test_notification_sent": "Đã gửi thông báo! (Tự ẩn sau 3 giây)",
+        "quick_links_title": "Lối tắt Cài đặt hệ thống",
+        "open_bluetooth_settings": "Mở Cài đặt Bluetooth",
+        "open_notification_settings": "Mở Cài đặt Thông báo",
+
+        // About
+        "about_app_description": "Ứng dụng mã nguồn mở native điều khiển tai nghe HUAWEI FreeBuds & HONOR Earbuds trên macOS.",
+        "about_unlisted_devices_title": "Hỗ trợ Tai nghe ngoài danh mục",
+        "about_unlisted_devices_hint": "Ứng dụng tích hợp Driver tổng quát và bộ quét pin BLE có khả năng tự động nhận diện và điều khiển các dòng tai nghe HUAWEI, HONOR hoặc TWS ngoài danh mục chính thức (thử nghiệm / không cam kết 100%).",
+        "github_repo": "Kho lưu trữ GitHub",
+        "license": "Giấy phép (GPL-3.0)",
+
+        // Headphones & Application sections
+        "headphones_section": "Tai nghe",
+        "application_section": "Ứng dụng",
+
+        // State descriptions
+        "state_stopped": "Chưa khởi động",
+        "state_disconnected": "Mất kết nối",
+        "state_wait": "Đang kết nối...",
+        "state_connected": "Đã kết nối",
+        "state_failed": "Kết nối thất bại",
+        "state_destroyed": "Đã hủy",
+        "state_connected_limited": "Đã kết nối (Giới hạn)",
+        "connected_limited_title": "Đã kết nối Bluetooth (Chế độ giới hạn)",
+        "connected_limited_hint": "Âm thanh hoạt động bình thường qua macOS. Giao thức RFCOMM chưa sẵn sàng. Bấm Thử lại để kết nối lại giao thức.",
+        "retry": "Thử lại",
+
+        // Low Battery
+        "low_battery_critical_title": "⚠️ Pin rất thấp",
+        "low_battery_critical_body": "Pin ở mức %d%%. Hãy sạc tai nghe sớm.",
+        "low_battery_title": "🔋 Pin yếu",
+        "low_battery_body": "Pin ở mức %d%%."
+    ]
+}

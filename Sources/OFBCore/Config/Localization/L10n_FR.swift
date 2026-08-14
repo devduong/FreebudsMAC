@@ -1,0 +1,251 @@
+// OFBCore/Config/Localization/L10n_FR.swift
+// French Localization
+
+import Foundation
+
+enum L10n_FR {
+    static let dict: [String: String] = [
+        // Menu Bar
+        "menu_connect": "Connecter",
+        "menu_disconnect": "Déconnecter",
+        "menu_battery": "Batterie",
+        "menu_left": "Écouteur gauche",
+        "menu_right": "Écouteur droit",
+        "menu_case": "Boîtier de charge",
+        "menu_reading_battery": "Lecture de la batterie...",
+        "menu_noise_control": "Contrôle du bruit",
+        "menu_anc_off": "Désactiver",
+        "menu_anc_on": "Réduction du bruit",
+        "menu_anc_awareness": "Transparence",
+        "menu_settings": "Réglages…",
+        "menu_bugreport": "Signaler un bogue…",
+        "menu_quit": "Quitter",
+        "menu_equalizer": "🎵 Égaliseur",
+        "menu_dual_connect": "🔗 Double connexion",
+        "menu_dual_connect_enabled": "Double connexion activée",
+
+        // Tabs
+        "tab_select_device": "Sélectionner un appareil",
+        "tab_device_info": "Infos sur l'appareil",
+        "tab_sound_quality": "Qualité sonore & EQ",
+        "tab_gestures": "Commandes gestuelles",
+        "tab_dual_connect": "Double connexion",
+        "tab_other_settings": "Autres réglages",
+        "tab_supported_devices": "Appareils pris en charge",
+        "tab_app_settings": "Interface utilisateur",
+        "tab_automation": "Automatisation",
+        "tab_hotkeys": "Raccourcis clavier",
+        "tab_macos_settings": "Réglages macOS",
+        "tab_buy_me_coffee": "Donate Me",
+        "tab_about": "À propos",
+        "buy_me_coffee_title": "Donate Me ☕",
+        "buy_me_coffee_desc": "Si FreebudsMAC vous aide à gérer vos écouteurs Huawei / HONOR sur macOS, soutenez le développeur !",
+
+        // Supported Devices
+        "supported_devices_title": "Modèles d'écouteurs pris en charge",
+        "supported_devices_subtitle": "Liste complète des écouteurs Bluetooth HUAWEI & HONOR pris en charge nativement",
+        "devices_count_unit": "modèles",
+        "search_placeholder": "Rechercher un modèle...",
+        "filter_all": "Tous",
+        "supported_list_section": "Liste des modèles pris en charge",
+        "wear_status": "État de port",
+
+        // ANC Levels
+        "anc_lvl_comfort": "Confortable",
+        "anc_lvl_normal": "Normal",
+        "anc_lvl_ultra": "Ultra",
+        "anc_lvl_dynamic": "Dynamique",
+        "anc_lvl_voice_boost": "Amplification vocale",
+        "anc_levels_title": "Niveau de réduction du bruit",
+        "anc_awareness_level_title": "Niveau de transparence",
+
+        // EQ Presets
+        "eq_preset_default": "Par défaut",
+        "eq_preset_hardbass": "Amplification des basses",
+        "eq_preset_treble": "Amplification des aigus",
+        "eq_preset_voices": "Voix",
+        "eq_preset_symphony": "Symphonie",
+        "eq_preset_hi_fi_live": "Hi-Fi Live",
+
+        // Gestures
+        "gesture_pause": "Lecture / Pause",
+        "gesture_next": "Piste suivante",
+        "gesture_prev": "Piste précédente",
+        "gesture_assistant": "Assistant vocal",
+        "gesture_switch_anc": "Changer de mode de réduction du bruit",
+        "gesture_change_volume": "Régler le volume",
+        "gesture_off": "Désactivé",
+
+        // Device Selection
+        "auto_setup": "Configuration automatique",
+        "auto_select": "Sélection automatique des écouteurs pris en charge",
+        "manual_select_hint": "Lorsque la configuration automatique est désactivée, vous pouvez sélectionner manuellement tout appareil Bluetooth (les appareils non répertoriés utiliseront le pilote générique).",
+        "unlisted_generic_tag": "Pilote générique",
+        "select_device": "Sélectionner un appareil",
+        "scanning_devices": "Recherche d'appareils Bluetooth jumelés...",
+        "no_devices_found": "Aucun appareil Bluetooth jumelé trouvé.",
+        "no_devices_hint": "Veuillez d'abord jumeler vos écouteurs HUAWEI / HONOR dans Réglages Système macOS -> Bluetooth.",
+        "macos_connected": "Connecté à macOS",
+        "selected": "Sélectionné",
+        "select": "Sélectionner",
+        "unsupported": "Non pris en charge",
+        "refresh_devices": "Actualiser",
+
+        // Device Info
+        "not_connected_title": "Écouteurs non connectés en Bluetooth",
+        "not_connected_hint": "Veuillez allumer et connecter vos écouteurs dans Réglages Système macOS -> Bluetooth.",
+        "device_overview": "Vue d'ensemble de l'appareil",
+        "device_model": "Modèle d'appareil",
+        "mac_address": "Adresse MAC",
+        "status": "État",
+        "firmware_version": "Version du micrologiciel",
+        "serial_number": "Numéro de série",
+        "battery_status": "État de la batterie",
+        "battery": "Batterie",
+        "left_headphone": "Écouteur gauche",
+        "right_headphone": "Écouteur droit",
+        "charging_case": "Boîtier de charge",
+        "charging_status": "État de charge",
+        "charging": "⚡ En charge",
+        "not_charging": "Ne charge pas",
+        "wear_detection": "Détection de port",
+        "in_ear": "Dans l'oreille",
+        "out_of_ear": "Hors de l'oreille",
+        "left_ear": "Oreille gauche",
+        "right_ear": "Oreille droite",
+        "none": "Aucun",
+        "unknown": "Inconnu",
+
+        // Sound Quality
+        "sound_quality_preference": "Préférence de qualité sonore",
+        "priority_mode": "Mode de priorité",
+        "prioritize_sound_quality": "Priorité à la qualité sonore",
+        "prioritize_connection": "Priorité à la stabilité de la connexion",
+        "equalizer_presets": "Préréglages d'égaliseur",
+        "preset": "Préréglage",
+        "create_custom_preset": "Créer un préréglage personnalisé…",
+        "delete_preset": "Supprimer le préréglage",
+        "ten_band_equalizer": "Égaliseur personnalisé à 10 bandes",
+        "save": "Enregistrer",
+        "undo": "Annuler",
+        "reset": "Réinitialiser",
+        "export_json": "Exporter en JSON…",
+        "import_json": "Importer depuis JSON…",
+        "not_connected_eq_hint": "Veuillez connecter vos écouteurs pour régler l'égaliseur à 10 bandes et les préréglages.",
+        "create_preset_title": "Créer un préréglage personnalisé",
+        "preset_name": "Nom du préréglage",
+        "create": "Créer",
+        "cancel": "Annuler",
+        "enter_preset_name": "Entrez un nom pour le nouveau préréglage d'égaliseur.",
+
+        // Gestures
+        "double_tap_gestures": "Double toucher",
+        "triple_tap_gestures": "Triple toucher",
+        "long_press_gestures": "Appui long",
+        "swipe_gesture": "Glissement",
+        "left_earbud": "Écouteur gauche",
+        "right_earbud": "Écouteur droit",
+        "stem_swipe": "Glissement sur la tige",
+        "not_connected_gesture_hint": "Veuillez connecter vos écouteurs pour configurer les commandes gestuelles.",
+
+        // Dual Connect
+        "multi_point_connection": "Connexion multipoint (Dual-Connect)",
+        "enable_dual_connect": "Activer la double connexion",
+        "dual_connect_description": "La double connexion permet à vos écouteurs de rester connectés à deux appareils Bluetooth simultanément (ex. téléphone et Mac).",
+        "not_connected_dual_hint": "Veuillez connecter vos écouteurs pour configurer les réglages de double connexion.",
+
+        // Device Settings
+        "audio_latency": "Audio & Latence",
+        "low_latency_mode": "Mode faible latence (Jeu)",
+        "auto_pause": "Pause automatique au retrait",
+
+        // App Settings
+        "language": "Langue",
+        "lang_system": "Système par défaut",
+        "tray_options": "Options de la barre de menus",
+        "show_battery_in_tray": "Afficher le % de batterie dans la barre de menus",
+        "show_left_battery_in_tray": "Afficher Écouteur Gauche % (L: %)",
+        "show_right_battery_in_tray": "Afficher Écouteur Droit % (R: %)",
+        "show_case_battery_in_tray": "Afficher Boîtier % (C: %)",
+        "show_equalizer_in_tray": "Afficher le sous-menu Égaliseur dans la barre",
+        "show_dual_connect_in_tray": "Afficher le sous-menu Double connexion dans la barre",
+        "run_in_background": "Exécuter l'application en arrière-plan (Barre de menus)",
+        "notifications_section": "Notifications & Alertes",
+        "notify_low_battery": "Alertes de batterie faible (20% et 10%)",
+        "notify_low_battery_hint": "Recevoir des notifications système lorsque la batterie descend à 20% et 10%.",
+
+        // Automation
+        "automation_title": "Automatisation & Intégration",
+        "auto_pause_media": "Mettre en pause les médias lorsque l'écouteur est retiré",
+        "auto_connect_on_launch": "Connexion automatique aux écouteurs au démarrage de l'application",
+
+        // Hotkeys
+        "global_hotkeys_title": "Raccourcis clavier globaux",
+        "hotkeys_subtitle": "Contrôlez vos écouteurs Huawei / HONOR partout sur macOS grâce aux raccourcis système.",
+        "hotkey_cycle_anc": "Changer de mode de réduction du bruit (ANC)",
+        "hotkey_toggle_connect": "Activer / Désactiver la connexion",
+        "permissions_required_title": "Autorisation d'accessibilité requise",
+        "accessibility_permission_hint": "Les raccourcis clavier globaux nécessitent l'autorisation Accessibilité sur macOS pour fonctionner en arrière-plan.",
+        "accessibility_active": "Autorisation d'accessibilité accordée",
+        "accessibility_active_desc": "Les raccourcis clavier globaux sont actifs et fonctionnent en arrière-plan.",
+        "active_shortcuts_section": "Combinaisons de raccourcis actives",
+        "test_shortcut": "Tester",
+        "config_low_latency": "Mode de jeu à faible latence",
+        "open_accessibility_settings": "Ouvrir les réglages d'accessibilité",
+
+        // macOS Settings & Permissions
+        "macos_integration_title": "Intégration macOS",
+        "launch_at_login": "Lancer FreebudsMAC automatiquement à la connexion (LaunchAgent)",
+        "launchagent_enabled": "Lancement automatique activé",
+        "launchagent_disabled": "Lancement automatique désactivé",
+        "permissions_section": "Autorisations système",
+        "perm_bluetooth_title": "Accès Bluetooth",
+        "perm_bluetooth_desc": "Requis pour découvrir et communiquer avec les écouteurs FreeBuds.",
+        "perm_notifications_title": "Notifications",
+        "perm_notifications_desc": "Requis pour les alertes de batterie faible (20% et 10%).",
+        "perm_notification_banner_tip": "💡 Astuce : Dans Réglages Système macOS → Notifications → FreebudsMAC, choisissez le style « Bannières » au lieu de « Aucun » pour afficher les alertes à l'écran.",
+        "perm_accessibility_title": "Accessibilité (Accessibility)",
+        "perm_accessibility_desc": "Requis pour les raccourcis globaux de commutation ANC et audio.",
+        "perm_status_granted": "Accordé",
+        "perm_status_denied": "Refusé",
+        "perm_status_not_determined": "Non demandé",
+        "perm_btn_request": "Demander l'autorisation",
+        "perm_btn_grant": "Accorder l'accès",
+        "perm_btn_open_settings": "Réglages",
+        "perm_refresh_btn": "Actualiser l'état",
+        "test_notification_btn": "Envoyer une notification de test",
+        "test_notification_sent": "Notification envoyée ! (Fermeture auto dans 3s)",
+        "quick_links_title": "Raccourcis des réglages système",
+        "open_bluetooth_settings": "Ouvrir les réglages Bluetooth",
+        "open_notification_settings": "Ouvrir les réglages de notifications",
+
+        // About
+        "about_app_description": "Application native open-source pour gérer les écouteurs HUAWEI FreeBuds & HONOR Earbuds sur macOS.",
+        "about_unlisted_devices_title": "Prise en charge des appareils non répertoriés",
+        "about_unlisted_devices_hint": "Comprend un pilote générique et un scanner de batterie BLE pour prendre en charge les écouteurs HUAWEI, HONOR et TWS tiers non listés (au mieux / non garanti).",
+        "github_repo": "Dépôt GitHub",
+        "license": "Licence (GPL-3.0)",
+
+        // Headphones & Application sections
+        "headphones_section": "Écouteurs",
+        "application_section": "Application",
+
+        // State descriptions
+        "state_stopped": "Non démarré",
+        "state_disconnected": "Déconnecté",
+        "state_wait": "Connexion en cours...",
+        "state_connected": "Connecté",
+        "state_failed": "Échec de la connexion",
+        "state_destroyed": "Détruit",
+        "state_connected_limited": "Connecté (Limité)",
+        "connected_limited_title": "Bluetooth connecté (Mode limité)",
+        "connected_limited_hint": "L'audio fonctionne via macOS. Le protocole RFCOMM est temporairement indisponible. Cliquez sur Réessayer.",
+        "retry": "Réessayer",
+
+        // Low Battery
+        "low_battery_critical_title": "⚠️ Batterie critique",
+        "low_battery_critical_body": "Batterie à %d%%. Veuillez charger vos écouteurs bientôt.",
+        "low_battery_title": "🔋 Batterie faible",
+        "low_battery_body": "Batterie à %d%%."
+    ]
+}

@@ -1,0 +1,251 @@
+// OFBCore/Config/Localization/L10n_EN.swift
+// English Localization
+
+import Foundation
+
+enum L10n_EN {
+    static let dict: [String: String] = [
+        // Menu Bar
+        "menu_connect": "Connect",
+        "menu_disconnect": "Disconnect",
+        "menu_battery": "Battery",
+        "menu_left": "Left Earbud",
+        "menu_right": "Right Earbud",
+        "menu_case": "Charging Case",
+        "menu_reading_battery": "Reading battery...",
+        "menu_noise_control": "Noise Control",
+        "menu_anc_off": "Disable Noise Control",
+        "menu_anc_on": "Noise Cancellation",
+        "menu_anc_awareness": "Awareness",
+        "menu_settings": "Settings…",
+        "menu_bugreport": "Bugreport…",
+        "menu_quit": "Leave application",
+        "menu_equalizer": "🎵 Equalizer",
+        "menu_dual_connect": "🔗 Dual-Connect",
+        "menu_dual_connect_enabled": "Dual-Connect Enabled",
+
+        // Tabs
+        "tab_select_device": "Select Device",
+        "tab_device_info": "Device Info",
+        "tab_sound_quality": "Sound Quality & EQ",
+        "tab_gestures": "Gestures",
+        "tab_dual_connect": "Dual-Connect",
+        "tab_other_settings": "Other Settings",
+        "tab_supported_devices": "Supported Devices",
+        "tab_app_settings": "User Interface",
+        "tab_automation": "Automation",
+        "tab_hotkeys": "Keyboard Shortcuts",
+        "tab_macos_settings": "macOS Audio Settings",
+        "tab_buy_me_coffee": "Donate Me",
+        "tab_about": "About",
+        "buy_me_coffee_title": "Donate Me ☕",
+        "buy_me_coffee_desc": "If FreebudsMAC helps you manage your Huawei / HONOR headphones on macOS, consider supporting the developer!",
+
+        // Supported Devices
+        "supported_devices_title": "Supported Headphone Models",
+        "supported_devices_subtitle": "Full list of HUAWEI & HONOR Bluetooth headphones supported natively",
+        "devices_count_unit": "models",
+        "search_placeholder": "Search model name...",
+        "filter_all": "All",
+        "supported_list_section": "Supported Models List",
+        "wear_status": "Wear Status",
+
+        // ANC Levels
+        "anc_lvl_comfort": "Comfortable",
+        "anc_lvl_normal": "Normal",
+        "anc_lvl_ultra": "Ultra",
+        "anc_lvl_dynamic": "Dynamic",
+        "anc_lvl_voice_boost": "Voice Boost",
+        "anc_levels_title": "Cancellation Level",
+        "anc_awareness_level_title": "Awareness Level",
+
+        // EQ Presets
+        "eq_preset_default": "Default",
+        "eq_preset_hardbass": "Bass-boost",
+        "eq_preset_treble": "Treble-boost",
+        "eq_preset_voices": "Voices",
+        "eq_preset_symphony": "Symphony",
+        "eq_preset_hi_fi_live": "Hi-Fi Live",
+
+        // Gestures
+        "gesture_pause": "Play / Pause",
+        "gesture_next": "Next Track",
+        "gesture_prev": "Previous Track",
+        "gesture_assistant": "Voice Assistant",
+        "gesture_switch_anc": "Switch Noise Control Mode",
+        "gesture_change_volume": "Adjust Volume",
+        "gesture_off": "Disabled",
+
+        // Device Selection
+        "auto_setup": "Auto Setup",
+        "auto_select": "Auto-select supported earphone",
+        "manual_select_hint": "When Auto Setup is disabled, you can manually select any paired Bluetooth device (unlisted devices will use the Generic Driver).",
+        "unlisted_generic_tag": "Generic Driver",
+        "select_device": "Select Device",
+        "scanning_devices": "Scanning paired Bluetooth devices...",
+        "no_devices_found": "No paired Bluetooth devices found.",
+        "no_devices_hint": "Please pair your HUAWEI / HONOR earphone in macOS System Settings -> Bluetooth first.",
+        "macos_connected": "macOS Connected",
+        "selected": "Selected",
+        "select": "Select",
+        "unsupported": "Unsupported",
+        "refresh_devices": "Refresh Devices",
+
+        // Device Info
+        "not_connected_title": "Earbuds not connected via Bluetooth",
+        "not_connected_hint": "Please turn on and connect your earbuds in macOS System Settings -> Bluetooth.",
+        "device_overview": "Device Overview",
+        "device_model": "Device Model",
+        "mac_address": "MAC Address",
+        "status": "Status",
+        "firmware_version": "Firmware Version",
+        "serial_number": "Serial Number",
+        "battery_status": "Battery Status",
+        "battery": "Battery",
+        "left_headphone": "Left Headphone",
+        "right_headphone": "Right Headphone",
+        "charging_case": "Charging Case",
+        "charging_status": "Charging Status",
+        "charging": "⚡ Charging",
+        "not_charging": "Not Charging",
+        "wear_detection": "Wear Detection",
+        "in_ear": "In Ear",
+        "out_of_ear": "Out of Ear",
+        "left_ear": "Left Ear",
+        "right_ear": "Right Ear",
+        "none": "None",
+        "unknown": "Unknown",
+
+        // Sound Quality
+        "sound_quality_preference": "Sound Quality Preference",
+        "priority_mode": "Priority Mode",
+        "prioritize_sound_quality": "Prioritize Sound Quality",
+        "prioritize_connection": "Prioritize Connection Quality",
+        "equalizer_presets": "Equalizer Presets",
+        "preset": "Preset",
+        "create_custom_preset": "Create Custom Preset…",
+        "delete_preset": "Delete Preset",
+        "ten_band_equalizer": "10-Band Custom Equalizer",
+        "save": "Save",
+        "undo": "Undo",
+        "reset": "Reset",
+        "export_json": "Export to JSON…",
+        "import_json": "Import from JSON…",
+        "not_connected_eq_hint": "Please connect your earbuds to adjust the 10-band EQ and Presets.",
+        "create_preset_title": "Create Custom Preset",
+        "preset_name": "Preset Name",
+        "create": "Create",
+        "cancel": "Cancel",
+        "enter_preset_name": "Enter a name for the new custom equalizer preset.",
+
+        // Gestures
+        "double_tap_gestures": "Double Tap Gestures",
+        "triple_tap_gestures": "Triple Tap Gestures",
+        "long_press_gestures": "Long Press Gestures",
+        "swipe_gesture": "Swipe Gesture",
+        "left_earbud": "Left Earbud",
+        "right_earbud": "Right Earbud",
+        "stem_swipe": "Stem Swipe",
+        "not_connected_gesture_hint": "Please connect your earbuds to configure gesture controls.",
+
+        // Dual Connect
+        "multi_point_connection": "Multi-point Dual Connection",
+        "enable_dual_connect": "Enable Dual-Connect",
+        "dual_connect_description": "Dual Connection allows your headphones to remain connected to two Bluetooth devices simultaneously (e.g. phone and Mac).",
+        "not_connected_dual_hint": "Please connect your earbuds to configure Dual-Connect settings.",
+
+        // Device Settings
+        "audio_latency": "Audio & Latency",
+        "low_latency_mode": "Low-Latency Mode (Gaming)",
+        "auto_pause": "Auto-Pause on Remove",
+
+        // App Settings
+        "language": "Language",
+        "lang_system": "System Default",
+        "tray_options": "Menu Bar Options",
+        "show_battery_in_tray": "Show battery % in menu bar",
+        "show_left_battery_in_tray": "Show Left Earbud % (L: %)",
+        "show_right_battery_in_tray": "Show Right Earbud % (R: %)",
+        "show_case_battery_in_tray": "Show Charging Case % (C: %)",
+        "show_equalizer_in_tray": "Show Equalizer submenu in tray",
+        "show_dual_connect_in_tray": "Show Dual-Connect submenu in tray",
+        "run_in_background": "Run app in background (Menu Bar Tray)",
+        "notifications_section": "Notifications & Alerts",
+        "notify_low_battery": "Low battery alerts (20% & 10%)",
+        "notify_low_battery_hint": "Receive system notifications when earbuds or case battery falls to 20% and 10%.",
+
+        // Automation
+        "automation_title": "Automation & Integration",
+        "auto_pause_media": "Auto-pause media playback when earbud is removed from ear",
+        "auto_connect_on_launch": "Automatically connect to earbuds when application starts",
+
+        // Hotkeys
+        "global_hotkeys_title": "Global Keyboard Shortcuts",
+        "hotkeys_subtitle": "Control your Huawei / HONOR earphones instantly from anywhere in macOS using system-wide hotkeys.",
+        "hotkey_cycle_anc": "Cycle Noise Control Mode (ANC)",
+        "hotkey_toggle_connect": "Toggle Connect / Disconnect",
+        "permissions_required_title": "Accessibility Permission Required",
+        "accessibility_permission_hint": "Global keyboard shortcuts require macOS Accessibility permissions to capture key combinations in background.",
+        "accessibility_active": "Accessibility Permission Granted",
+        "accessibility_active_desc": "Global keyboard shortcuts are active and working in the background.",
+        "active_shortcuts_section": "Active Hotkey Combinations",
+        "test_shortcut": "Test Run",
+        "config_low_latency": "Low Latency Gaming Mode",
+        "open_accessibility_settings": "Open Accessibility Settings",
+
+        // macOS Settings & Permissions
+        "macos_integration_title": "macOS Integration",
+        "launch_at_login": "Launch FreebudsMAC automatically at login (LaunchAgent)",
+        "launchagent_enabled": "LaunchAgent enabled",
+        "launchagent_disabled": "LaunchAgent disabled",
+        "permissions_section": "System Permissions",
+        "perm_bluetooth_title": "Bluetooth Access",
+        "perm_bluetooth_desc": "Required to discover and communicate with FreeBuds earphones.",
+        "perm_notifications_title": "Notifications",
+        "perm_notifications_desc": "Required for low battery alerts (20% & 10%).",
+        "perm_notification_banner_tip": "💡 Tip: In macOS System Settings → Notifications → FreebudsMAC, ensure Alert Style is set to \"Banners\" instead of \"None\" to display pop-up banners on screen.",
+        "perm_accessibility_title": "Accessibility",
+        "perm_accessibility_desc": "Required for global hotkeys to switch ANC and sound modes.",
+        "perm_status_granted": "Granted",
+        "perm_status_denied": "Denied",
+        "perm_status_not_determined": "Not Requested",
+        "perm_btn_request": "Request Permission",
+        "perm_btn_grant": "Grant Access",
+        "perm_btn_open_settings": "Open Settings",
+        "perm_refresh_btn": "Refresh Status",
+        "test_notification_btn": "Send Test Notification",
+        "test_notification_sent": "Notification sent! (Auto-dismiss in 3s)",
+        "quick_links_title": "System Preferences Quick Links",
+        "open_bluetooth_settings": "Open Bluetooth Settings",
+        "open_notification_settings": "Open Notification Settings",
+
+        // About
+        "about_app_description": "Open-source native application for managing HUAWEI FreeBuds & HONOR Earbuds series on macOS.",
+        "about_unlisted_devices_title": "Unlisted Devices Support",
+        "about_unlisted_devices_hint": "Includes generic fallback driver and BLE battery scanner to support unlisted HUAWEI, HONOR, and third-party TWS earphones (best-effort / non-guaranteed).",
+        "github_repo": "GitHub Repository",
+        "license": "License (GPL-3.0)",
+
+        // Headphones & Application sections
+        "headphones_section": "Headphones",
+        "application_section": "Application",
+
+        // State descriptions
+        "state_stopped": "Not Started",
+        "state_disconnected": "Disconnected",
+        "state_wait": "Connecting...",
+        "state_connected": "Connected",
+        "state_failed": "Connection Failed",
+        "state_destroyed": "Destroyed",
+        "state_connected_limited": "Connected (Limited)",
+        "connected_limited_title": "Bluetooth Connected (Limited Mode)",
+        "connected_limited_hint": "Audio is active via macOS. RFCOMM protocol is temporarily unavailable. Click Retry to reconnect.",
+        "retry": "Retry",
+
+        // Low Battery
+        "low_battery_critical_title": "⚠️ Battery Critical",
+        "low_battery_critical_body": "Battery at %d%%. Please charge your earbuds soon.",
+        "low_battery_title": "🔋 Low Battery",
+        "low_battery_body": "Battery at %d%%."
+    ]
+}
