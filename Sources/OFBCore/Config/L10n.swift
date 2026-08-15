@@ -7,6 +7,8 @@ public enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
     case system = "system"
     case vietnamese = "vi"
     case english = "en"
+    case chineseSimplified = "zh-Hans"
+    case chineseTraditional = "zh-Hant"
     case russian = "ru"
     case french = "fr"
 
@@ -19,6 +21,8 @@ public enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
             return "\(L10n.tr("lang_system")) (\(resolved.nativeName))"
         case .vietnamese: return "Tiếng Việt"
         case .english: return "English"
+        case .chineseSimplified: return "简体中文 (Simplified Chinese)"
+        case .chineseTraditional: return "繁體中文 (Traditional Chinese)"
         case .russian: return "Русский"
         case .french: return "Français"
         }
@@ -29,6 +33,8 @@ public enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
         case .system: return "System"
         case .vietnamese: return "Tiếng Việt"
         case .english: return "English"
+        case .chineseSimplified: return "简体中文"
+        case .chineseTraditional: return "繁體中文"
         case .russian: return "Русский"
         case .french: return "Français"
         }
@@ -41,6 +47,12 @@ public enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
         if code.hasPrefix("vi") { return .vietnamese }
         if code.hasPrefix("ru") { return .russian }
         if code.hasPrefix("fr") { return .french }
+        if code.contains("hant") || code.contains("tw") || code.contains("hk") || code.contains("mo") {
+            return .chineseTraditional
+        }
+        if code.hasPrefix("zh") || code.contains("hans") || code.contains("cn") || code.contains("sg") {
+            return .chineseSimplified
+        }
         return .english // Default fallback to English if system language is unsupported
     }
 }
@@ -58,6 +70,10 @@ public enum L10n {
         switch effectiveLanguage {
         case .vietnamese:
             return L10n_VI.dict[key] ?? L10n_EN.dict[key] ?? key
+        case .chineseSimplified:
+            return L10n_ZH_Hans.dict[key] ?? L10n_EN.dict[key] ?? key
+        case .chineseTraditional:
+            return L10n_ZH_Hant.dict[key] ?? L10n_EN.dict[key] ?? key
         case .russian:
             return L10n_RU.dict[key] ?? L10n_EN.dict[key] ?? key
         case .french:

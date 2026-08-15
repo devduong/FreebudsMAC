@@ -1,0 +1,251 @@
+// OFBCore/Config/Localization/L10n_ZH_Hans.swift
+// Simplified Chinese Localization (简体中文)
+
+import Foundation
+
+enum L10n_ZH_Hans {
+    static let dict: [String: String] = [
+        // Menu Bar
+        "menu_connect": "连接",
+        "menu_disconnect": "断开连接",
+        "menu_battery": "电量",
+        "menu_left": "左耳机",
+        "menu_right": "右耳机",
+        "menu_case": "充电盒",
+        "menu_reading_battery": "正在读取电量...",
+        "menu_noise_control": "噪声控制",
+        "menu_anc_off": "关闭噪声控制",
+        "menu_anc_on": "降噪",
+        "menu_anc_awareness": "透传",
+        "menu_settings": "设置…",
+        "menu_bugreport": "反馈与问题…",
+        "menu_quit": "退出应用",
+        "menu_equalizer": "🎵 均衡器",
+        "menu_dual_connect": "🔗 双设备连接",
+        "menu_dual_connect_enabled": "双设备连接已开启",
+
+        // Tabs
+        "tab_select_device": "选择设备",
+        "tab_device_info": "设备信息",
+        "tab_sound_quality": "音质与音效",
+        "tab_gestures": "手势控制",
+        "tab_dual_connect": "双设备连接",
+        "tab_other_settings": "其他设置",
+        "tab_supported_devices": "支持的设备",
+        "tab_app_settings": "界面设置",
+        "tab_automation": "自动化",
+        "tab_hotkeys": "快捷键",
+        "tab_macos_settings": "macOS 音频设置",
+        "tab_buy_me_coffee": "赞助支持",
+        "tab_about": "关于",
+        "buy_me_coffee_title": "赞助支持 ☕",
+        "buy_me_coffee_desc": "如果 FreebudsMAC 帮助您在 macOS 上轻松管理华为 / 荣耀耳机，欢迎赞助支持开发者！",
+
+        // Supported Devices
+        "supported_devices_title": "支持的耳机型号",
+        "supported_devices_subtitle": "原生支持的 HUAWEI & HONOR 蓝牙耳机完整列表",
+        "devices_count_unit": "款型号",
+        "search_placeholder": "搜索耳机型号...",
+        "filter_all": "全部",
+        "supported_list_section": "支持型号列表",
+        "wear_status": "佩戴状态",
+
+        // ANC Levels
+        "anc_lvl_comfort": "轻度",
+        "anc_lvl_normal": "均衡",
+        "anc_lvl_ultra": "深度",
+        "anc_lvl_dynamic": "智慧动态",
+        "anc_lvl_voice_boost": "人声透传",
+        "anc_levels_title": "降噪等级",
+        "anc_awareness_level_title": "透传等级",
+
+        // EQ Presets
+        "eq_preset_default": "默认",
+        "eq_preset_hardbass": "低音增强",
+        "eq_preset_treble": "高音增强",
+        "eq_preset_voices": "清晰人声",
+        "eq_preset_symphony": "交响乐",
+        "eq_preset_hi_fi_live": "Hi-Fi 现场",
+
+        // Gestures
+        "gesture_pause": "播放 / 暂停",
+        "gesture_next": "下一首",
+        "gesture_prev": "上一首",
+        "gesture_assistant": "语音助手",
+        "gesture_switch_anc": "切换噪声控制模式",
+        "gesture_change_volume": "调节音量",
+        "gesture_off": "无操作",
+
+        // Device Selection
+        "auto_setup": "自动配置",
+        "auto_select": "自动选择已支持的耳机",
+        "manual_select_hint": "关闭自动配置后，您可以手动选择任何已配对的蓝牙设备（未列出设备将启用通用驱动程序）。",
+        "unlisted_generic_tag": "通用驱动",
+        "select_device": "选择设备",
+        "scanning_devices": "正在扫描已配对的蓝牙设备...",
+        "no_devices_found": "未发现已配对的蓝牙设备。",
+        "no_devices_hint": "请先在 macOS 系统设置 -> 蓝牙 中配对您的 HUAWEI / HONOR 耳机。",
+        "macos_connected": "macOS 已连接",
+        "selected": "已选择",
+        "select": "选择",
+        "unsupported": "不支持",
+        "refresh_devices": "刷新设备列表",
+
+        // Device Info
+        "not_connected_title": "耳机未通过蓝牙连接",
+        "not_connected_hint": "请在 macOS 系统设置 -> 蓝牙 中开启并连接您的耳机。",
+        "device_overview": "设备概览",
+        "device_model": "设备型号",
+        "mac_address": "MAC 地址",
+        "status": "状态",
+        "firmware_version": "固件版本",
+        "serial_number": "序列号",
+        "battery_status": "电量状态",
+        "battery": "电量",
+        "left_headphone": "左耳机",
+        "right_headphone": "右耳机",
+        "charging_case": "充电盒",
+        "charging_status": "充电状态",
+        "charging": "⚡ 充电中",
+        "not_charging": "未充电",
+        "wear_detection": "佩戴检测",
+        "in_ear": "佩戴中",
+        "out_of_ear": "已取下",
+        "left_ear": "左耳",
+        "right_ear": "右耳",
+        "none": "无",
+        "unknown": "未知",
+
+        // Sound Quality
+        "sound_quality_preference": "音质偏好",
+        "priority_mode": "音质优先级",
+        "prioritize_sound_quality": "音质优先",
+        "prioritize_connection": "连接稳定性优先",
+        "equalizer_presets": "均衡器预设",
+        "preset": "预设",
+        "create_custom_preset": "创建自定义预设…",
+        "delete_preset": "删除预设",
+        "ten_band_equalizer": "10 段自定义均衡器",
+        "save": "保存",
+        "undo": "撤销",
+        "reset": "重置",
+        "export_json": "导出为 JSON…",
+        "import_json": "从 JSON 导入…",
+        "not_connected_eq_hint": "请先连接耳机以调节 10 段均衡器和预设音效。",
+        "create_preset_title": "创建自定义预设",
+        "preset_name": "预设名称",
+        "create": "创建",
+        "cancel": "取消",
+        "enter_preset_name": "请输入新自定义均衡器预设的名称。",
+
+        // Gestures
+        "double_tap_gestures": "双击手势",
+        "triple_tap_gestures": "三击手势",
+        "long_press_gestures": "长按手势",
+        "swipe_gesture": "滑动控制",
+        "left_earbud": "左耳机",
+        "right_earbud": "右耳机",
+        "stem_swipe": "耳柄滑动",
+        "not_connected_gesture_hint": "请先连接耳机以配置手势控制选项。",
+
+        // Dual Connect
+        "multi_point_connection": "多点双设备连接",
+        "enable_dual_connect": "启用双设备连接",
+        "dual_connect_description": "双设备连接允许您的耳机同时与两台蓝牙设备保持连接（例如手机与 Mac）。",
+        "not_connected_dual_hint": "请先连接耳机以配置双设备连接设置。",
+
+        // Device Settings
+        "audio_latency": "音频与延迟",
+        "low_latency_mode": "低时延模式（游戏）",
+        "auto_pause": "摘下耳机自动暂停",
+
+        // App Settings
+        "language": "语言",
+        "lang_system": "跟随系统",
+        "tray_options": "菜单栏图标选项",
+        "show_battery_in_tray": "在菜单栏中显示电量百分比",
+        "show_left_battery_in_tray": "显示左耳机电量 (L: %)",
+        "show_right_battery_in_tray": "显示右耳机电量 (R: %)",
+        "show_case_battery_in_tray": "显示充电盒电量 (C: %)",
+        "show_equalizer_in_tray": "在菜单栏显示均衡器子菜单",
+        "show_dual_connect_in_tray": "在菜单栏显示双设备连接子菜单",
+        "run_in_background": "后台运行应用（菜单栏常驻）",
+        "notifications_section": "通知与提醒",
+        "notify_low_battery": "低电量提醒 (20% & 10%)",
+        "notify_low_battery_hint": "当耳机或充电盒电量降至 20% 和 10% 时接收系统横幅通知。",
+
+        // Automation
+        "automation_title": "自动化与集成",
+        "auto_pause_media": "从耳中取下耳机时自动暂停媒体播放",
+        "auto_connect_on_launch": "应用程序启动时自动连接耳机",
+
+        // Hotkeys
+        "global_hotkeys_title": "全局快捷键",
+        "hotkeys_subtitle": "使用全局快捷键从 macOS 的任何位置即时控制您的华为 / 荣耀耳机。",
+        "hotkey_cycle_anc": "循环切换噪声控制模式 (ANC)",
+        "hotkey_toggle_connect": "一键连接 / 断开连接",
+        "permissions_required_title": "需要辅助功能权限",
+        "accessibility_permission_hint": "全局快捷键需要在 macOS 辅助功能中授权，以便在后台捕获按键组合。",
+        "accessibility_active": "辅助功能权限已授予",
+        "accessibility_active_desc": "全局快捷键已激活，可在后台正常运行。",
+        "active_shortcuts_section": "当前启用的快捷键组合",
+        "test_shortcut": "测试运行",
+        "config_low_latency": "低时延游戏模式",
+        "open_accessibility_settings": "打开辅助功能设置",
+
+        // macOS Settings & Permissions
+        "macos_integration_title": "macOS 系统集成",
+        "launch_at_login": "开机自动启动 FreebudsMAC (LaunchAgent)",
+        "launchagent_enabled": "开机启动已启用",
+        "launchagent_disabled": "开机启动已停用",
+        "permissions_section": "系统权限",
+        "perm_bluetooth_title": "蓝牙访问权限",
+        "perm_bluetooth_desc": "用于发现并与 FreeBuds 耳机进行通信。",
+        "perm_notifications_title": "通知权限",
+        "perm_notifications_desc": "用于发送低电量提醒 (20% & 10%)。",
+        "perm_notification_banner_tip": "💡 提示：在 macOS 系统设置 → 通知 → FreebudsMAC 中，请确保提醒样式设为“横幅”而非“无”，以便在屏幕上弹出通知。",
+        "perm_accessibility_title": "辅助功能权限",
+        "perm_accessibility_desc": "用于全局快捷键在后台切换降噪与音效模式。",
+        "perm_status_granted": "已授权",
+        "perm_status_denied": "已拒绝",
+        "perm_status_not_determined": "未请求",
+        "perm_btn_request": "请求权限",
+        "perm_btn_grant": "授予访问权限",
+        "perm_btn_open_settings": "打开系统设置",
+        "perm_refresh_btn": "刷新状态",
+        "test_notification_btn": "发送测试通知",
+        "test_notification_sent": "通知已发送！（3 秒后自动消失）",
+        "quick_links_title": "系统偏好设置快捷入口",
+        "open_bluetooth_settings": "打开蓝牙设置",
+        "open_notification_settings": "打开通知设置",
+
+        // About
+        "about_app_description": "适用于 macOS 的开源原生华为 FreeBuds & 荣耀 Earbuds 耳机管理工具。",
+        "about_unlisted_devices_title": "未列出设备支持",
+        "about_unlisted_devices_hint": "内置通用降级驱动程序与 BLE 电池扫描器，尽力支持未列出的华为、荣耀及第三方 TWS 耳机（尽力支持 / 不保证完全兼容）。",
+        "github_repo": "GitHub 代码仓库",
+        "license": "开源许可证 (GPL-3.0)",
+
+        // Headphones & Application sections
+        "headphones_section": "耳机设备",
+        "application_section": "应用程序",
+
+        // State descriptions
+        "state_stopped": "未启动",
+        "state_disconnected": "已断开",
+        "state_wait": "正在连接...",
+        "state_connected": "已连接",
+        "state_failed": "连接失败",
+        "state_destroyed": "已销毁",
+        "state_connected_limited": "已连接（受限模式）",
+        "connected_limited_title": "蓝牙已连接（受限模式）",
+        "connected_limited_hint": "音频正在通过 macOS 播放。RFCOMM 控制协议暂不可用。点击“重试”重新建立连接。",
+        "retry": "重试",
+
+        // Low Battery
+        "low_battery_critical_title": "⚠️ 电量极低",
+        "low_battery_critical_body": "耳机电量仅剩 %d%%，请尽快放入充电盒充电。",
+        "low_battery_title": "🔋 低电量提醒",
+        "low_battery_body": "当前电量为 %d%%。"
+    ]
+}

@@ -14,9 +14,9 @@
 
 ---
 
-### 🌐 Langues / Languages / Ngôn ngữ / Языки
+### 🌐 Langues / Languages / 多语言 / Ngôn ngữ / Языки
 
-[**English**](../README.md) • [**Tiếng Việt**](README_vi.md) • [**Русский**](README_ru.md) • [**Français**](README_fr.md)
+[**English**](../README.md) • [**Tiếng Việt**](README_vi.md) • [**简体中文**](README_zh-Hans.md) • [**繁體中文**](README_zh-Hant.md) • [**Русский**](README_ru.md) • [**Français**](README_fr.md)
 
 ---
 
@@ -35,7 +35,7 @@
 ## ✨ Fonctionnalités principales
 
 - 🎛️ **Contrôle complet de la réduction de bruit (ANC)** : Basculez en un clic entre **Réduction de bruit**, **Mode perception (Awareness / Transparence)** et **Désactivé (Normal)**.
-- 🔋 **Suivi de la batterie en temps réel** : Affichage précis du niveau de charge de l'écouteur gauche (L), droit (R) et du boîtier (Case) avec statut de charge.
+- 🔋 **Suivi de la batterie en temps réel** : Affichage précis du niveau de charge de l'écouteur gauche (L), droit (R) và du boîtier (Case) avec statut de charge.
 - 👂 **Détection de port (Auto-Pause)** : Mise en pause automatique de la lecture audio lorsque vous retirez un écouteur et reprise dès que vous le remettez.
 - 🎚️ **Égaliseur (EQ) & Profils audio** : Choix des profils par défaut, Amplification des basses, Amplification des aigus, Voix et égaliseur personnalisé.
 - 🔀 **Double connexion (Dual-Connect / Multipoint)** : Gestion des appareils appairés et bascule rapide de la source audio active.
@@ -44,7 +44,7 @@
 - ⌨️ **Raccourcis clavier globaux** : Raccourcis système (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) accessibles depuis n'importe quelle application.
 - 🔔 **Notifications de batterie faible auto-masquantes** : Alertes natives discrètes à 20% et 10% (se ferment automatiquement après 3 secondes).
 - 🚀 **Performances et légèreté** : Application Swift native ultra-légère, lancement instantané, consommation RAM < 30 Mo et CPU quasi nul.
-- 🌐 **Support multilingue** : Interface disponible en Français, Anglais, Vietnamien et Russe.
+- 🌐 **Support multilingue** : Interface disponible en Français, Anglais, Vietnamien, Chinois simplifié (简体中文), Chinois traditionnel (繁體中文) et Russe.
 
 ---
 

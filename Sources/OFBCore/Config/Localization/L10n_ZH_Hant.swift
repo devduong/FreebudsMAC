@@ -1,0 +1,251 @@
+// OFBCore/Config/Localization/L10n_ZH_Hant.swift
+// Traditional Chinese Localization (繁體中文)
+
+import Foundation
+
+enum L10n_ZH_Hant {
+    static let dict: [String: String] = [
+        // Menu Bar
+        "menu_connect": "連接",
+        "menu_disconnect": "斷開連接",
+        "menu_battery": "電量",
+        "menu_left": "左耳機",
+        "menu_right": "右耳機",
+        "menu_case": "充電盒",
+        "menu_reading_battery": "正在讀取電量...",
+        "menu_noise_control": "噪音控制",
+        "menu_anc_off": "關閉噪音控制",
+        "menu_anc_on": "主動降噪",
+        "menu_anc_awareness": "透傳模式",
+        "menu_settings": "設定…",
+        "menu_bugreport": "回報問題…",
+        "menu_quit": "結束應用程式",
+        "menu_equalizer": "🎵 等化器",
+        "menu_dual_connect": "🔗 雙設備連接",
+        "menu_dual_connect_enabled": "雙設備連接已開啟",
+
+        // Tabs
+        "tab_select_device": "選擇裝置",
+        "tab_device_info": "裝置資訊",
+        "tab_sound_quality": "音質與音效",
+        "tab_gestures": "手勢控制",
+        "tab_dual_connect": "雙設備連接",
+        "tab_other_settings": "其他設定",
+        "tab_supported_devices": "支援的裝置",
+        "tab_app_settings": "介面設定",
+        "tab_automation": "自動化",
+        "tab_hotkeys": "快速鍵",
+        "tab_macos_settings": "macOS 音訊設定",
+        "tab_buy_me_coffee": "贊助支持",
+        "tab_about": "關於",
+        "buy_me_coffee_title": "贊助支持 ☕",
+        "buy_me_coffee_desc": "如果 FreebudsMAC 幫助您在 macOS 上輕鬆管理華為 / 榮耀耳機，歡迎贊助支持開發者！",
+
+        // Supported Devices
+        "supported_devices_title": "支援的耳機型號",
+        "supported_devices_subtitle": "原生支援的 HUAWEI & HONOR 藍牙耳機完整清單",
+        "devices_count_unit": "款型號",
+        "search_placeholder": "搜尋耳機型號...",
+        "filter_all": "全部",
+        "supported_list_section": "支援型號清單",
+        "wear_status": "佩戴狀態",
+
+        // ANC Levels
+        "anc_lvl_comfort": "輕度",
+        "anc_lvl_normal": "均衡",
+        "anc_lvl_ultra": "深度",
+        "anc_lvl_dynamic": "智慧動態",
+        "anc_lvl_voice_boost": "人聲透傳",
+        "anc_levels_title": "降噪等級",
+        "anc_awareness_level_title": "透傳等級",
+
+        // EQ Presets
+        "eq_preset_default": "預設",
+        "eq_preset_hardbass": "低音增強",
+        "eq_preset_treble": "高音增強",
+        "eq_preset_voices": "清晰人聲",
+        "eq_preset_symphony": "交響樂",
+        "eq_preset_hi_fi_live": "Hi-Fi 現場",
+
+        // Gestures
+        "gesture_pause": "播放 / 暫停",
+        "gesture_next": "下一首",
+        "gesture_prev": "上一首",
+        "gesture_assistant": "語音助理",
+        "gesture_switch_anc": "切換噪音控制模式",
+        "gesture_change_volume": "調節音量",
+        "gesture_off": "無動作",
+
+        // Device Selection
+        "auto_setup": "自動設定",
+        "auto_select": "自動選擇已支援的耳機",
+        "manual_select_hint": "關閉自動設定後，您可以手動選擇任何已配對的藍牙裝置（未列出裝置將使用通用驅動程式）。",
+        "unlisted_generic_tag": "通用驅動",
+        "select_device": "選擇裝置",
+        "scanning_devices": "正在搜尋已配對的藍牙裝置...",
+        "no_devices_found": "未找到已配對的藍牙裝置。",
+        "no_devices_hint": "請先在 macOS 系統設定 -> 藍牙 中配對您的 HUAWEI / HONOR 耳機。",
+        "macos_connected": "macOS 已連線",
+        "selected": "已選擇",
+        "select": "選擇",
+        "unsupported": "不支援",
+        "refresh_devices": "重新整理裝置清單",
+
+        // Device Info
+        "not_connected_title": "耳機未透過藍牙連線",
+        "not_connected_hint": "請在 macOS 系統設定 -> 藍牙 中開啟並連線您的耳機。",
+        "device_overview": "裝置概覽",
+        "device_model": "裝置型號",
+        "mac_address": "MAC 位址",
+        "status": "狀態",
+        "firmware_version": "韌體版本",
+        "serial_number": "序號",
+        "battery_status": "電量狀態",
+        "battery": "電量",
+        "left_headphone": "左耳機",
+        "right_headphone": "右耳機",
+        "charging_case": "充電盒",
+        "charging_status": "充電狀態",
+        "charging": "⚡ 充電中",
+        "not_charging": "未充電",
+        "wear_detection": "佩戴偵測",
+        "in_ear": "佩戴中",
+        "out_of_ear": "已取下",
+        "left_ear": "左耳",
+        "right_ear": "右耳",
+        "none": "無",
+        "unknown": "未知",
+
+        // Sound Quality
+        "sound_quality_preference": "音質偏好",
+        "priority_mode": "優先級模式",
+        "prioritize_sound_quality": "音質優先",
+        "prioritize_connection": "連線穩定度優先",
+        "equalizer_presets": "等化器預設",
+        "preset": "預設",
+        "create_custom_preset": "建立自訂預設…",
+        "delete_preset": "刪除預設",
+        "ten_band_equalizer": "10 段自訂等化器",
+        "save": "儲存",
+        "undo": "復原",
+        "reset": "重設",
+        "export_json": "匯出為 JSON…",
+        "import_json": "從 JSON 匯入…",
+        "not_connected_eq_hint": "請先連線耳機以調整 10 段等化器與預設音效。",
+        "create_preset_title": "建立自訂預設",
+        "preset_name": "預設名稱",
+        "create": "建立",
+        "cancel": "取消",
+        "enter_preset_name": "請輸入新自訂等化器預設的名稱。",
+
+        // Gestures
+        "double_tap_gestures": "按兩下手勢",
+        "triple_tap_gestures": "按三下手勢",
+        "long_press_gestures": "長按手勢",
+        "swipe_gesture": "滑動控制",
+        "left_earbud": "左耳機",
+        "right_earbud": "右耳機",
+        "stem_swipe": "耳柄滑動",
+        "not_connected_gesture_hint": "請先連線耳機以配置手勢控制選項。",
+
+        // Dual Connect
+        "multi_point_connection": "多點雙設備連接",
+        "enable_dual_connect": "啟用雙設備連接",
+        "dual_connect_description": "雙設備連接允許您的耳機同時與兩台藍牙裝置保持連線（例如手機與 Mac）。",
+        "not_connected_dual_hint": "請先連線耳機以配置雙設備連接設定。",
+
+        // Device Settings
+        "audio_latency": "音訊與延遲",
+        "low_latency_mode": "低延遲模式（遊戲）",
+        "auto_pause": "摘下耳機自動暫停",
+
+        // App Settings
+        "language": "語言",
+        "lang_system": "跟隨系統",
+        "tray_options": "選單列圖示選項",
+        "show_battery_in_tray": "在選單列中顯示電量百分比",
+        "show_left_battery_in_tray": "顯示左耳機電量 (L: %)",
+        "show_right_battery_in_tray": "顯示右耳機電量 (R: %)",
+        "show_case_battery_in_tray": "顯示充電盒電量 (C: %)",
+        "show_equalizer_in_tray": "在選單列顯示等化器子選單",
+        "show_dual_connect_in_tray": "在選單列顯示雙設備連接子選單",
+        "run_in_background": "背景執行應用程式（常駐選單列）",
+        "notifications_section": "通知與提醒",
+        "notify_low_battery": "低電量提醒 (20% & 10%)",
+        "notify_low_battery_hint": "當耳機或充電盒電量降至 20% 與 10% 時接收系統橫幅通知。",
+
+        // Automation
+        "automation_title": "自動化與整合",
+        "auto_pause_media": "從耳中取下耳機時自動暫停媒體播放",
+        "auto_connect_on_launch": "應用程式啟動時自動連線耳機",
+
+        // Hotkeys
+        "global_hotkeys_title": "全域快速鍵",
+        "hotkeys_subtitle": "使用全域快速鍵從 macOS 的任何位置即時控制您的華為 / 榮耀耳機。",
+        "hotkey_cycle_anc": "循環切換噪音控制模式 (ANC)",
+        "hotkey_toggle_connect": "一鍵連線 / 斷開連接",
+        "permissions_required_title": "需要輔助功能權限",
+        "accessibility_permission_hint": "全域快速鍵需要在 macOS 輔助功能中授權，以便在背景擷取按鍵組合。",
+        "accessibility_active": "輔助功能權限已授予",
+        "accessibility_active_desc": "全域快速鍵已啟用，可在背景正常運作。",
+        "active_shortcuts_section": "目前啟用的快速鍵組合",
+        "test_shortcut": "測試執行",
+        "config_low_latency": "低延遲遊戲模式",
+        "open_accessibility_settings": "開啟輔助功能設定",
+
+        // macOS Settings & Permissions
+        "macos_integration_title": "macOS 系統整合",
+        "launch_at_login": "開機自動啟動 FreebudsMAC (LaunchAgent)",
+        "launchagent_enabled": "開機啟動已啟用",
+        "launchagent_disabled": "開機啟動已停用",
+        "permissions_section": "系統權限",
+        "perm_bluetooth_title": "藍牙存取權限",
+        "perm_bluetooth_desc": "用於搜尋並與 FreeBuds 耳機進行通訊。",
+        "perm_notifications_title": "通知權限",
+        "perm_notifications_desc": "用於傳送低電量提醒 (20% & 10%)。",
+        "perm_notification_banner_tip": "💡 提示：在 macOS 系統設定 → 通知 → FreebudsMAC 中，請確保提醒樣式設為「橫幅」而非「無」，以便在螢幕上顯示彈出通知。",
+        "perm_accessibility_title": "輔助功能權限",
+        "perm_accessibility_desc": "用於全域快速鍵在背景切換降噪與音訊模式。",
+        "perm_status_granted": "已授權",
+        "perm_status_denied": "已拒絕",
+        "perm_status_not_determined": "未要求",
+        "perm_btn_request": "要求權限",
+        "perm_btn_grant": "授予存取權限",
+        "perm_btn_open_settings": "開啟系統設定",
+        "perm_refresh_btn": "重新整理狀態",
+        "test_notification_btn": "傳送測試通知",
+        "test_notification_sent": "通知已傳送！（3 秒後自動消失）",
+        "quick_links_title": "系統設定快速連結",
+        "open_bluetooth_settings": "開啟藍牙設定",
+        "open_notification_settings": "開啟通知設定",
+
+        // About
+        "about_app_description": "適用於 macOS 的開源原生華為 FreeBuds & 榮耀 Earbuds 耳機管理工具。",
+        "about_unlisted_devices_title": "未列出裝置支援",
+        "about_unlisted_devices_hint": "內建通用降級驅動程式與 BLE 電池掃描器，盡力支援未列出的華為、榮耀及第三方 TWS 耳機（盡力支援 / 不保證完全相容）。",
+        "github_repo": "GitHub 程式碼倉庫",
+        "license": "開源授權條款 (GPL-3.0)",
+
+        // Headphones & Application sections
+        "headphones_section": "耳機裝置",
+        "application_section": "應用程式",
+
+        // State descriptions
+        "state_stopped": "未啟動",
+        "state_disconnected": "已斷開",
+        "state_wait": "正在連線...",
+        "state_connected": "已連線",
+        "state_failed": "連線失敗",
+        "state_destroyed": "已銷毀",
+        "state_connected_limited": "已連線（受限模式）",
+        "connected_limited_title": "藍牙已連線（受限模式）",
+        "connected_limited_hint": "音訊正在透過 macOS 播放。RFCOMM 控制協定暫不可用。點擊「重試」重新建立連線。",
+        "retry": "重試",
+
+        // Low Battery
+        "low_battery_critical_title": "⚠️ 電量極低",
+        "low_battery_critical_body": "耳機電量僅剩 %d%%，請盡快放入充電盒充電。",
+        "low_battery_title": "🔋 低電量提醒",
+        "low_battery_body": "目前電量為 %d%%。"
+    ]
+}

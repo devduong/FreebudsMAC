@@ -14,9 +14,9 @@
 
 ---
 
-### 🌐 Languages / Ngôn ngữ / Языки / Langues
+### 🌐 Languages / 多语言 / Ngôn ngữ / Языки / Langues
 
-[**English**](README.md) • [**Tiếng Việt**](ReadMe/README_vi.md) • [**Русский**](ReadMe/README_ru.md) • [**Français**](ReadMe/README_fr.md)
+[**English**](README.md) • [**Tiếng Việt**](ReadMe/README_vi.md) • [**简体中文**](ReadMe/README_zh-Hans.md) • [**繁體中文**](ReadMe/README_zh-Hant.md) • [**Русский**](ReadMe/README_ru.md) • [**Français**](ReadMe/README_fr.md)
 
 ---
 
@@ -44,7 +44,7 @@
 - ⌨️ **Global System Hotkeys**: Instant hotkeys (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) that work from anywhere across macOS.
 - 🔔 **Low Battery Notifications**: Native time-sensitive notification banners at 20% and 10% battery levels (auto-dismisses after 3 seconds).
 - 🚀 **Zero Python Dependencies**: 100% native Swift & SwiftUI application with minimal CPU and RAM usage (< 30 MB).
-- 🌐 **Multi-language Support**: Built-in English, Vietnamese (Tiếng Việt), Russian (Русский), and French (Français).
+- 🌐 **Multi-language Support**: Built-in English, Vietnamese (Tiếng Việt), Simplified Chinese (简体中文), Traditional Chinese (繁體中文), Russian (Русский), and French (Français).
 
 ---
 

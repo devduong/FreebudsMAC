@@ -14,9 +14,9 @@
 
 ---
 
-### 🌐 Ngôn ngữ / Languages / Языки / Langues
+### 🌐 Ngôn ngữ / Languages / 多语言 / Языки / Langues
 
-[**English**](../README.md) • [**Tiếng Việt**](README_vi.md) • [**Русский**](README_ru.md) • [**Français**](README_fr.md)
+[**English**](../README.md) • [**Tiếng Việt**](README_vi.md) • [**简体中文**](README_zh-Hans.md) • [**繁體中文**](README_zh-Hant.md) • [**Русский**](README_ru.md) • [**Français**](README_fr.md)
 
 ---
 
@@ -44,7 +44,7 @@
 - ⌨️ **Phím tắt Toàn Hệ thống (Global Hotkeys)**: Bộ phím tắt tiện lợi (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) hoạt động nhạy bén ngay cả khi app đang chạy ẩn dưới khay Menu Bar.
 - 🔔 **Thông báo Pin Yếu Tự Động Ẩn**: Gửi banner thông báo native khi pin tai nghe còn 20% và 10% (tự động biến mất sau 3 giây không làm phiền màn hình).
 - 🚀 **Hiệu năng Vượt trội**: Ứng dụng native siêu nhẹ, khởi động tức thì, tiêu thụ RAM dưới 30 MB và gần như 0% CPU.
-- 🌐 **Đa ngôn ngữ Linh hoạt**: Hỗ trợ sẵn Tiếng Việt, Tiếng Anh (English), Tiếng Nga (Русский) và Tiếng Pháp (Français).
+- 🌐 **Đa ngôn ngữ Linh hoạt**: Hỗ trợ sẵn Tiếng Việt, Tiếng Anh (English), Tiếng Trung Giản Thể (简体中文), Tiếng Trung Phồn Thể (繁體中文), Tiếng Nga (Русский) và Tiếng Pháp (Français).
 
 ---
 
