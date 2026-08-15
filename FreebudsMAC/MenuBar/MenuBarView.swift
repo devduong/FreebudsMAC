@@ -179,7 +179,7 @@ struct MenuBarView: View {
 
             // Bugreport...
             Button(L10n.tr("menu_bugreport")) {
-                if let url = URL(string: "https://github.com/devduong") {
+                if let url = URL(string: "https://github.com/devduong/FreebudsMAC") {
                     NSWorkspace.shared.open(url)
                 }
             }

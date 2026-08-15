@@ -56,7 +56,7 @@ struct AboutView: View {
                 Divider()
 
                 HStack(spacing: 20) {
-                    Link(L10n.tr("github_repo"), destination: URL(string: "https://github.com/devduong")!)
+                    Link(L10n.tr("github_repo"), destination: URL(string: "https://github.com/devduong/FreebudsMAC")!)
                     Link(L10n.tr("license"), destination: URL(string: "https://www.gnu.org/licenses/gpl-3.0.html")!)
                 }
             }

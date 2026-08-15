@@ -71,7 +71,7 @@ struct BuyMeCoffeeView: View {
                         .buttonStyle(.plain)
 
                         Button(action: {
-                            if let url = URL(string: "https://github.com/devduong") {
+                            if let url = URL(string: "https://github.com/devduong/FreebudsMAC") {
                                 NSWorkspace.shared.open(url)
                             }
                         }) {
