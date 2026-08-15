@@ -111,6 +111,9 @@ To open the app:
 
 *(Alternative: Right-click / Control-click `FreebudsMAC.app` in Finder -> select **Open** -> click **Open**).*
 
+> [!TIP]
+> **Initial Connection Note**: On the very first launch, battery percentages might not show up immediately while initial Bluetooth channels synchronize. If needed, simply put the earbuds back into the charging case and take them out again to reconnect. Battery readings will display accurately and automatically on all subsequent runs.
+
 ---
 
 ## 🛡️ macOS Permissions Guide

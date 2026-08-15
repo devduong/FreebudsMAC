@@ -111,6 +111,9 @@ Mở tệp `.dmg` đã tải về và kéo biểu tượng **FreebudsMAC.app** v
 
 *(Mẹo nhanh: Bạn cũng có thể nhấn giữ phím `Control` (hoặc nhấp chuột phải) vào `FreebudsMAC.app` trong Finder ➔ Chọn **Open** ➔ Bấm **Open**).*
 
+> [!TIP]
+> **Lưu ý trong lần chạy đầu tiên**: Lần chạy đầu tiên có thể chưa hiện % pin ngay do cần đồng bộ luồng Bluetooth (có thể cần cất tai nghe vào hộp sạc rồi lấy ra để kết nối lại); thông tin pin sẽ hiển thị đầy đủ và ổn định ở các lần sau.
+
 ---
 
 ## 🛡️ Hướng Dẫn Cấp Quyền Hệ Thống

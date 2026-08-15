@@ -111,6 +111,9 @@ Ouvrez le fichier `.dmg` téléchargé et glissez **FreebudsMAC.app** dans votre
 
 *(Astuce : Vous pouvez aussi maintenir la touche `Contrôle` enfoncée (ou clic droit) sur `FreebudsMAC.app` dans le Finder ➔ cliquez sur **Ouvrir** ➔ confirmez avec **Ouvrir**).*
 
+> [!TIP]
+> **Remarque lors du premier lancement** : Lors du tout premier lancement, le pourcentage de batterie peut ne pas s'afficher immédiatement en raison de la synchronisation initiale Bluetooth (il peut être nécessaire de ranger les écouteurs dans le boîtier puis de les ressortir pour reconnecter) ; les informations de batterie s'afficheront de manière fluide et stable lors des utilisations suivantes.
+
 ---
 
 ## 🛡️ Guide des autorisations système macOS
