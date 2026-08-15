@@ -214,7 +214,7 @@ enum L10n_FR {
         "perm_btn_open_settings": "Réglages",
         "perm_refresh_btn": "Actualiser l'état",
         "test_notification_btn": "Envoyer une notification de test",
-        "test_notification_sent": "Notification envoyée ! (Fermeture auto dans 3s)",
+        "test_notification_sent": "Notification envoyée ! (Fermeture auto dans 5s)",
         "quick_links_title": "Raccourcis des réglages système",
         "open_bluetooth_settings": "Ouvrir les réglages Bluetooth",
         "open_notification_settings": "Ouvrir les réglages de notifications",

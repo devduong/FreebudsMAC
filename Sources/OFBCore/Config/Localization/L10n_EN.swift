@@ -214,7 +214,7 @@ enum L10n_EN {
         "perm_btn_open_settings": "Open Settings",
         "perm_refresh_btn": "Refresh Status",
         "test_notification_btn": "Send Test Notification",
-        "test_notification_sent": "Notification sent! (Auto-dismiss in 3s)",
+        "test_notification_sent": "Notification sent! (Auto-dismiss in 5s)",
         "quick_links_title": "System Preferences Quick Links",
         "open_bluetooth_settings": "Open Bluetooth Settings",
         "open_notification_settings": "Open Notification Settings",

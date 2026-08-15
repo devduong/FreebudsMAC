@@ -42,7 +42,7 @@
 - 👆 **Personnalisation des gestes tactiles** : Configuration du double-tap, triple-tap, appui long et glissement pour le contrôle du volume.
 - ⚡ **Mode faible latence pour le jeu** : Réduction du délai de transmission audio pour le gaming et le montage vidéo.
 - ⌨️ **Raccourcis clavier globaux** : Raccourcis système (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) accessibles depuis n'importe quelle application.
-- 🔔 **Notifications de batterie faible auto-masquantes** : Alertes natives discrètes à 20% et 10% (se ferment automatiquement après 3 secondes).
+- 🔔 **Notifications de batterie faible auto-masquantes** : Alertes natives discrètes à 20% et 10% (se ferment automatiquement après 5 secondes).
 - 🚀 **Performances et légèreté** : Application Swift native ultra-légère, lancement instantané, consommation RAM < 30 Mo et CPU quasi nul.
 - 🌐 **Support multilingue** : Interface disponible en Français, Anglais, Vietnamien, Chinois simplifié (简体中文), Chinois traditionnel (繁體中文) et Russe.
 
@@ -128,9 +128,8 @@ Réglages FreebudsMAC ➔ Réglages macOS
 - **Utilité** : Permet la communication SPP/RFCOMM et BLE pour lire l'état de la batterie et envoyer les ordres de contrôle ANC.
 - **Accorder** : Cliquez sur *"Ouvrir les réglages Bluetooth"* ou validez la demande système au démarrage.
 
-### 2. 🔔 Autorisation Notifications (Batterie faible)
-- **Utilité** : Recevoir une notification automatique quand la batterie descend à 20% et 10% (la notification disparaît d'elle-même après 3 secondes).
-- **Réglage recommandé** :
+### 2. 🔔 Autorisation de notification (Alertes de batterie faible)
+- **Objectif** : Recevoir des alertes lorsque la batterie descend à 20% et 10%. Les alertes disparaissent automatiquement après 5 secondes pour ne pas encombrer votre écran.
   - Ouvrez **Réglages Système** ➔ **Notifications** ➔ **FreebudsMAC**.
   - Assurez-vous que le style d'alerte est réglé sur **Bannières (Banners)** pour que les notifications s'affichent correctement dans le coin de l'écran.
 

@@ -214,7 +214,7 @@ enum L10n_ZH_Hant {
         "perm_btn_open_settings": "開啟系統設定",
         "perm_refresh_btn": "重新整理狀態",
         "test_notification_btn": "傳送測試通知",
-        "test_notification_sent": "通知已傳送！（3 秒後自動消失）",
+        "test_notification_sent": "通知已傳送！（5 秒後自動消失）",
         "quick_links_title": "系統設定快速連結",
         "open_bluetooth_settings": "開啟藍牙設定",
         "open_notification_settings": "開啟通知設定",

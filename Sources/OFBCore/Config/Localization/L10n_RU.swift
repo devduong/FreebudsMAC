@@ -214,7 +214,7 @@ enum L10n_RU {
         "perm_btn_open_settings": "Настройки",
         "perm_refresh_btn": "Обновить статус",
         "test_notification_btn": "Отправить тестовое уведомление",
-        "test_notification_sent": "Уведомление отправлено! (Скроется через 3 сек)",
+        "test_notification_sent": "Уведомление отправлено! (Скроется через 5 сек)",
         "quick_links_title": "Быстрые ссылки системных настроек",
         "open_bluetooth_settings": "Открыть настройки Bluetooth",
         "open_notification_settings": "Открыть настройки уведомлений",

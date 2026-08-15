@@ -214,7 +214,7 @@ enum L10n_VI {
         "perm_btn_open_settings": "Cài đặt",
         "perm_refresh_btn": "Làm mới",
         "test_notification_btn": "Gửi thông báo thử",
-        "test_notification_sent": "Đã gửi thông báo! (Tự ẩn sau 3 giây)",
+        "test_notification_sent": "Đã gửi thông báo! (Tự ẩn sau 5 giây)",
         "quick_links_title": "Lối tắt Cài đặt hệ thống",
         "open_bluetooth_settings": "Mở Cài đặt Bluetooth",
         "open_notification_settings": "Mở Cài đặt Thông báo",

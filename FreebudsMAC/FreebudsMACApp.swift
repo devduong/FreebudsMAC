@@ -192,17 +192,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
         if percentage <= 0 {
             return
         }
+        let devName = manager.deviceName.isEmpty ? AppVersion.appName : manager.deviceName
         if percentage <= 10 && !didNotify10 {
             didNotify10 = true
             sendLowBatteryNotification(
-                title: "⚠️ Battery Critical",
-                body: "\(manager.deviceName): Battery at \(percentage)%. Please charge your earbuds soon."
+                title: "\(L10n.tr("low_battery_critical_title")) (\(devName))",
+                body: L10n.tr("low_battery_critical_body", percentage)
             )
         } else if percentage <= 20 && !didNotify20 {
             didNotify20 = true
             sendLowBatteryNotification(
-                title: "🔋 Low Battery",
-                body: "\(manager.deviceName): Battery at \(percentage)%."
+                title: "\(L10n.tr("low_battery_title")) (\(devName))",
+                body: L10n.tr("low_battery_body", percentage)
             )
         } else if percentage > 20 {
             didNotify20 = false
@@ -248,9 +249,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
         )
         UNUserNotificationCenter.current().add(request)
 
-        // Auto hide notification after 3 seconds
+        // Auto hide notification after 5 seconds
         Task {
-            try? await Task.sleep(nanoseconds: 3_000_000_000)
+            try? await Task.sleep(nanoseconds: 5_000_000_000)
             UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: [notifId])
         }
     }

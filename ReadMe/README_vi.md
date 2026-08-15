@@ -42,7 +42,7 @@
 - 👆 **Tùy chỉnh Cử chỉ Cảm ứng (Touch Gestures)**: Cài đặt hành động khi Chạm 2 lần, Chạm 3 lần, Nhấn giữ và Vuốt điều chỉnh âm lượng.
 - ⚡ **Chế độ Độ Trễ Thấp (Low Latency Gaming Mode)**: Giảm tối đa độ trễ truyền âm thanh khi chơi game hoặc dựng video.
 - ⌨️ **Phím tắt Toàn Hệ thống (Global Hotkeys)**: Bộ phím tắt tiện lợi (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) hoạt động nhạy bén ngay cả khi app đang chạy ẩn dưới khay Menu Bar.
-- 🔔 **Thông báo Pin Yếu Tự Động Ẩn**: Gửi banner thông báo native khi pin tai nghe còn 20% và 10% (tự động biến mất sau 3 giây không làm phiền màn hình).
+- 🔔 **Thông báo Pin Yếu Tự Động Ẩn**: Gửi banner thông báo native khi pin tai nghe còn 20% và 10% (tự động biến mất sau 5 giây không làm phiền màn hình).
 - 🚀 **Hiệu năng Vượt trội**: Ứng dụng native siêu nhẹ, khởi động tức thì, tiêu thụ RAM dưới 30 MB và gần như 0% CPU.
 - 🌐 **Đa ngôn ngữ Linh hoạt**: Hỗ trợ sẵn Tiếng Việt, Tiếng Anh (English), Tiếng Trung Giản Thể (简体中文), Tiếng Trung Phồn Thể (繁體中文), Tiếng Nga (Русский) và Tiếng Pháp (Français).
 
@@ -128,8 +128,8 @@ Cài đặt FreebudsMAC ➔ Cài đặt macOS
 - **Công dụng**: Kết nối giao tiếp SPP/RFCOMM và BLE để đọc % pin và gửi lệnh đổi chế độ chống ồn.
 - **Cách cấp**: Cho phép khi macOS hiện thông báo yêu cầu hoặc bấm *"Mở cài đặt Bluetooth"*.
 
-### 2. 🔔 Quyền Thông Báo (Cảnh báo Pin yếu)
-- **Công dụng**: Nhận thông báo tự động khi pin tai nghe giảm xuống mức 20% và 10%. Thông báo sẽ tự động biến mất sau 3 giây.
+### 2. 🔔 Quyền Thông báo (Cảnh báo Pin yếu)
+- **Công dụng**: Nhận thông báo tự động khi pin tai nghe giảm xuống mức 20% và 10%. Thông báo sẽ tự động biến mất sau 5 giây để không làm phiền màn hình.
 - **Lưu ý quan trọng**:
   - Vào **System Settings (Cài đặt hệ thống)** ➔ **Notifications (Thông báo)** ➔ **FreebudsMAC**.
   - Đảm bảo chọn **Kiểu cảnh báo (Alert style)** là **Biểu ngữ (Banners)** thay vì "Không có" (None) để thông báo xuất hiện ở góc màn hình.

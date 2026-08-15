@@ -214,7 +214,7 @@ enum L10n_ZH_Hans {
         "perm_btn_open_settings": "打开系统设置",
         "perm_refresh_btn": "刷新状态",
         "test_notification_btn": "发送测试通知",
-        "test_notification_sent": "通知已发送！（3 秒后自动消失）",
+        "test_notification_sent": "通知已发送！（5 秒后自动消失）",
         "quick_links_title": "系统偏好设置快捷入口",
         "open_bluetooth_settings": "打开蓝牙设置",
         "open_notification_settings": "打开通知设置",

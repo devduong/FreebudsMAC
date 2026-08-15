@@ -223,8 +223,8 @@ struct MacOSSettingsView: View {
 
     private func sendTestNotification() {
         let content = UNMutableNotificationContent()
-        content.title = "🔋 FreeBuds Low Battery"
-        content.body = "Battery at 18%. (Test Notification - Auto hide in 3s)"
+        content.title = "\(L10n.tr("low_battery_title")) (FreeBuds)"
+        content.body = "\(L10n.tr("low_battery_body", 18)) (\(L10n.tr("test_notification_sent")))"
         content.sound = .default
         if #available(macOS 12.0, *) {
             content.interruptionLevel = .timeSensitive
@@ -240,13 +240,13 @@ struct MacOSSettingsView: View {
 
         withAnimation { testSent = true }
 
-        // Auto dismiss / hide notification banner after 3 seconds
+        // Auto dismiss / hide notification banner after 5 seconds
         Task {
-            try? await Task.sleep(nanoseconds: 3_000_000_000)
+            try? await Task.sleep(nanoseconds: 5_000_000_000)
             UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: [notifId])
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             withAnimation { testSent = false }
         }
     }

@@ -42,7 +42,7 @@
 - 👆 **Touch & Gesture Customization**: Configure Double Tap, Triple Tap, Long Press, and Swipe gestures (volume / track control).
 - ⚡ **Low Latency Gaming Mode**: Enable low latency audio streaming for gaming and video editing.
 - ⌨️ **Global System Hotkeys**: Instant hotkeys (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) that work from anywhere across macOS.
-- 🔔 **Low Battery Notifications**: Native time-sensitive notification banners at 20% and 10% battery levels (auto-dismisses after 3 seconds).
+- 🔔 **Low Battery Notifications**: Native time-sensitive notification banners at 20% and 10% battery levels (auto-dismisses after 5 seconds).
 - 🚀 **Zero Python Dependencies**: 100% native Swift & SwiftUI application with minimal CPU and RAM usage (< 30 MB).
 - 🌐 **Multi-language Support**: Built-in English, Vietnamese (Tiếng Việt), Simplified Chinese (简体中文), Traditional Chinese (繁體中文), Russian (Русский), and French (Français).
 
@@ -129,7 +129,7 @@ FreebudsMAC Settings ➔ macOS Settings
 - **How to grant**: Click *"Open Bluetooth Settings"* or allow when macOS prompts on first launch.
 
 ### 2. 🔔 Notification Permission (Low Battery Alerts)
-- **Purpose**: Receive alerts when battery drops to 20% and 10%. Alerts automatically disappear after 3 seconds so they don't clutter your screen.
+- **Purpose**: Receive alerts when battery drops to 20% and 10%. Alerts automatically disappear after 5 seconds so they don't clutter your screen.
 - **Important Configuration**:
   - Go to macOS **System Settings** -> **Notifications** -> **FreebudsMAC**.
   - Set **Alert style** to **Banners** (Biểu ngữ) instead of "None" to ensure popups appear in the top right corner.
