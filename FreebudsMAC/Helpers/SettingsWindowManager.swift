@@ -46,6 +46,14 @@ public final class SettingsWindowManager: NSObject, NSWindowDelegate {
         newWindow.isReleasedWhenClosed = false
         newWindow.delegate = self
 
+        // Far-right titlebar accessory for "New version available" indicator
+        let accessoryVC = NSTitlebarAccessoryViewController()
+        accessoryVC.layoutAttribute = .right
+        let accessoryHost = NSHostingView(rootView: TitlebarUpdateAccessoryView(config: config))
+        accessoryHost.frame = NSRect(x: 0, y: 0, width: 220, height: 32)
+        accessoryVC.view = accessoryHost
+        newWindow.addTitlebarAccessoryViewController(accessoryVC)
+
         self.window = newWindow
         applyTheme(config.appTheme)
         centerWindowOnScreen(newWindow)
@@ -108,5 +116,48 @@ public final class SettingsWindowManager: NSObject, NSWindowDelegate {
         DispatchQueue.main.async {
             NSApp.setActivationPolicy(.accessory)
         }
+    }
+}
+
+private struct TitlebarUpdateAccessoryView: View {
+    @ObservedObject var config: AppConfig
+    @ObservedObject private var updateChecker = UpdateChecker.shared
+
+    var body: some View {
+        HStack {
+            Spacer(minLength: 0)
+            if let newVersion = updateChecker.latestAvailableVersion {
+                Button(action: {
+                    Task {
+                        await updateChecker.checkForUpdates(isManual: true)
+                    }
+                }) {
+                    HStack(spacing: 6) {
+                        Circle()
+                            .fill(Color.green)
+                            .frame(width: 8, height: 8)
+                            .shadow(color: Color.green.opacity(0.6), radius: 3)
+                        Text("\(L10n.tr("toolbar_new_version")) (v\(newVersion))")
+                            .font(.caption)
+                            .fontWeight(.semibold)
+                            .lineLimit(1)
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 4)
+                    .background(
+                        Capsule()
+                            .fill(Color.green.opacity(0.14))
+                    )
+                    .overlay(
+                        Capsule()
+                            .stroke(Color.green.opacity(0.35), lineWidth: 1)
+                    )
+                }
+                .buttonStyle(.plain)
+                .help(L10n.tr("check_for_updates_btn"))
+                .padding(.trailing, 12)
+            }
+        }
+        .frame(height: 32)
     }
 }

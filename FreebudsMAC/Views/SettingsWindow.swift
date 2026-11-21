@@ -151,7 +151,7 @@ struct SettingsWindow: View {
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .navigation) {
+                ToolbarItem(placement: .automatic) {
                     Button(action: {
                         SettingsWindowManager.shared.toggleLightDark(config: config)
                     }) {
@@ -166,33 +166,6 @@ struct SettingsWindow: View {
                         .padding(.vertical, 3)
                     }
                     .help(L10n.tr("theme_toggle_hint"))
-                }
-
-                ToolbarItem(placement: .automatic) {
-                    Spacer()
-                }
-
-                if let newVersion = updateChecker.latestAvailableVersion {
-                    ToolbarItem(placement: .primaryAction) {
-                        Button(action: {
-                            Task {
-                                await updateChecker.checkForUpdates(isManual: true)
-                            }
-                        }) {
-                            HStack(spacing: 6) {
-                                Circle()
-                                    .fill(Color.green)
-                                    .frame(width: 8, height: 8)
-                                    .shadow(color: Color.green.opacity(0.6), radius: 3)
-                                Text("\(L10n.tr("toolbar_new_version")) (v\(newVersion))")
-                                    .font(.caption)
-                                    .fontWeight(.semibold)
-                            }
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 3)
-                        }
-                        .help(L10n.tr("check_for_updates_btn"))
-                    }
                 }
             }
         }
