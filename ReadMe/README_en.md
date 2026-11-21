@@ -10,7 +10,7 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B%20%7C%206.0-orange?style=flat-square&logo=swift)](https://swift.org)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-purple?style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![Release](https://img.shields.io/badge/Version-0.18.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
+[![Release](https://img.shields.io/badge/Version-0.19.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
 
 ---
 
@@ -43,6 +43,9 @@
 - ⚡ **Low Latency Gaming Mode**: Enable low latency audio streaming for gaming and video editing.
 - ⌨️ **Global System Hotkeys**: Instant hotkeys (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) that work from anywhere across macOS.
 - 🔔 **Low Battery Notifications**: Native time-sensitive notification banners at 20% and 10% battery levels (auto-dismisses after 5 seconds).
+- 🌓 **Quick Light / Dark Theme Switcher**: Instant 1-click Light, Dark, and System appearance toggle right in the window toolbar and sidebar footer.
+- 🖥️ **Smart Dock & Menu Bar Lifecycle**: Displays the app icon in the macOS Dock while the main window is open, and automatically hides it from the Dock when closed (`"x"`) while continuing to run in the Menu Bar.
+- 🔄 **In-Place Auto-Updater**: Automatically checks for new versions on GitHub with 1-click **"Update & Relaunch"** (downloads `.dmg`, replaces `.app` in-place, and restarts), plus *"Skip This Version"* and *"Never Remind Again"* options.
 - 🚀 **Zero Python Dependencies**: 100% native Swift & SwiftUI application with minimal CPU and RAM usage (< 30 MB).
 - 🌐 **Multi-language Support**: Built-in English, Vietnamese (Tiếng Việt), Simplified Chinese (简体中文), Traditional Chinese (繁體中文), Russian (Русский), and French (Français).
 
@@ -118,10 +121,10 @@ To open the app:
 
 ## 🛡️ macOS Permissions Guide
 
-For the best experience, configure the necessary permissions in **FreebudsMAC Settings > macOS Settings**:
+For the best experience, configure the necessary permissions in **FreebudsMAC > Settings > System Permissions**:
 
 ```
-FreebudsMAC Settings ➔ macOS Settings
+FreebudsMAC ➔ Settings ➔ System Permissions
 ├── 1. Bluetooth Permission     ➔ Required (Scan & communicate with FreeBuds)
 ├── 2. Notifications Permission ➔ Low battery alerts (Set alert style to Banners)
 └── 3. Accessibility Permission ➔ Global Hotkeys listener

@@ -18,11 +18,6 @@ struct FreebudsMACApp: App {
         } label: {
             MenuBarLabelView(appDelegate: appDelegate)
         }
-
-        // Settings Window
-        Settings {
-            SettingsWindow(manager: appDelegate.manager, config: appDelegate.config)
-        }
     }
 }
 
@@ -56,7 +51,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
     private var didNotify10: Bool = false
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        NSApplication.shared.setActivationPolicy(.accessory)
+        SettingsWindowManager.shared.applyTheme(config.appTheme)
+        if isAutostart {
+            NSApplication.shared.setActivationPolicy(.accessory)
+        } else {
+            NSApplication.shared.setActivationPolicy(.regular)
+        }
         UNUserNotificationCenter.current().delegate = self
 
         setupDoubleClickHandler()
@@ -68,13 +68,25 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
             GlobalHotkeyManager.shared.setup(manager: manager)
             requestNotificationPermission()
 
-            // Open Settings Window on manual launch, but keep silent (tray icon only) when autostarting on login
+            // Open Main Window (with Dock icon) on manual launch; keep silent in Menu Bar on autostart
             if !isAutostart {
                 SettingsWindowManager.shared.showWindow(manager: manager, config: config)
             }
 
             setupBatteryMonitoring()
+
+            // Automatically check for updates on public GitHub repository
+            await UpdateChecker.shared.checkForUpdates(isManual: false)
         }
+    }
+
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return false
+    }
+
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        SettingsWindowManager.shared.showWindow(manager: manager, config: config)
+        return true
     }
 
     private var isAutostart: Bool {

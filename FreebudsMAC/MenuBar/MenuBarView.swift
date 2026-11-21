@@ -18,13 +18,18 @@ struct MenuBarView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
+            // Open FreebudsMAC Main Window
+            Button(action: {
+                SettingsWindowManager.shared.showWindow(manager: manager, config: config)
+            }) {
+                Label(AppVersion.appName, systemImage: "headphones")
+            }
+
+            Divider()
+
             // Header: Device Name
             if !manager.deviceName.isEmpty {
                 Text(manager.deviceName)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            } else {
-                Text("FreebudsMAC")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -174,6 +179,13 @@ struct MenuBarView: View {
                 SettingsWindowManager.shared.showWindow(manager: manager, config: config)
             }
             .keyboardShortcut(",")
+
+            // Check for Updates...
+            Button(L10n.tr("menu_check_updates")) {
+                Task {
+                    await UpdateChecker.shared.checkForUpdates(isManual: true)
+                }
+            }
 
             Divider()
 

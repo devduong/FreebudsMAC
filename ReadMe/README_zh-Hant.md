@@ -10,7 +10,7 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B%20%7C%206.0-orange?style=flat-square&logo=swift)](https://swift.org)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-purple?style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![Release](https://img.shields.io/badge/Version-0.18.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
+[![Release](https://img.shields.io/badge/Version-0.19.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
 
 ---
 
@@ -43,6 +43,9 @@
 - ⚡ **低延遲遊戲模式**：為遊戲和影片剪輯開啟極低音訊延遲模式。
 - ⌨️ **全域系統快速鍵**：無論當前在使用什麼應用程式，均可透過快速鍵（`⌥⌘A`、`⌥⌘C`、`⌥⌘0`、`⌥⌘1`、`⌥⌘2`、`⌥⌘L`）即時控制耳機。
 - 🔔 **低電量橫幅提醒**：原生 macOS 通知提醒，當耳機或充電盒電量降至 20% 與 10% 時傳送通知（5 秒後自動淡出）。
+- 🌓 **快速淺色 / 深色主題切換**：視窗頂部工具列與側邊欄底部皆配備一鍵外觀切換圖示（支援**淺色**、**深色**與**跟隨系統**）。
+- 🖥️ **智慧 Dock 與選單列連動**：開啟主視窗時於 Dock 顯示應用圖示；點擊關閉按鈕 `"x"` 時自動從 Dock 隱藏圖示，同時保持在頂部選單列背景常駐執行。
+- 🔄 **自動檢查更新與覆蓋安裝（In-Place Auto-Updater）**：自動偵測 GitHub 公開儲存庫新版本，支援一鍵**「自動更新並重啟」**（自動下載 `.dmg`、解壓縮覆蓋目前應用並重新啟動），並提供*「略過此版本」*與*「永不提醒」*選項。
 - 🚀 **零 Python 依賴**：100% 純 Swift + SwiftUI 開發，記憶體與 CPU 佔用極低（常駐記憶體 < 30 MB）。
 - 🌐 **多語言支援**：內建英文、越南語、簡體中文、繁體中文、俄語和法語。
 
@@ -118,10 +121,10 @@ FreebudsMAC 擁有智慧的**多層級降級相容機制**：
 
 ## 🛡️ macOS 系統權限設定指南
 
-為了獲得完整的體驗，建議在 **FreebudsMAC 設定 > macOS 設定** 中配置必要權限：
+為了獲得完整的體驗，建議在 **FreebudsMAC > 設定 > 系統權限** 中配置必要權限：
 
 ```
-FreebudsMAC 設定 ➔ macOS 設定
+FreebudsMAC ➔ 設定 ➔ 系統權限
 ├── 1. 藍牙存取權限     ➔ 必需（搜尋並與 FreeBuds 耳機通訊）
 ├── 2. 通知權限         ➔ 低電量提醒（建議將提醒樣式設為橫幅）
 └── 3. 輔助功能權限     ➔ 全域快速鍵監聽（在背景回應按鍵）

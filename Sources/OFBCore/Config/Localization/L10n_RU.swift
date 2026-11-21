@@ -246,6 +246,38 @@ enum L10n_RU {
         "low_battery_critical_title": "⚠️ Критический заряд",
         "low_battery_critical_body": "Заряд батареи %d%%. Пожалуйста, зарядите наушники.",
         "low_battery_title": "🔋 Низкий заряд",
-        "low_battery_body": "Заряд батареи %d%%."
+        "low_battery_body": "Заряд батареи %d%%.",
+
+        // UI / Theme Simplification
+        "tab_overview": "Обзор и устройство",
+        "tab_settings_unified": "Настройки",
+        "theme_title": "Тема оформления",
+        "theme_system": "Системная",
+        "theme_light": "Светлая",
+        "theme_dark": "Тёмная",
+        "theme_toggle_hint": "Быстрое переключение светлой / тёмной темы",
+
+        // Update Checker
+        "menu_check_updates": "Проверить обновления…",
+        "check_for_updates_btn": "Проверить обновления",
+        "checking_updates": "Проверка обновлений…",
+        "auto_check_updates_toggle": "Автоматически проверять обновления при запуске",
+        "update_available_title": "Доступна новая версия: v%@",
+        "update_available_body": "Доступна новая версия FreebudsMAC v%@ в публичном репозитории (Текущая версия: v%@).\n\nНажмите «Обновить и перезапустить» для автоматической загрузки и замены приложения.",
+        "update_release_notes": "Список изменений:",
+        "update_btn_download": "Обновить и перезапустить",
+        "update_btn_later": "Напомнить позже",
+        "update_btn_skip_version": "Пропустить эту версию",
+        "update_btn_never_remind": "Больше не напоминать",
+        "update_up_to_date_title": "У вас последняя версия!",
+        "update_up_to_date_body": "FreebudsMAC v%@ — самая актуальная версия.",
+        "update_error_title": "Не удалось проверить обновления",
+        "update_error_body": "Не удалось подключиться к публичному репозиторию GitHub. Проверьте подключение к интернету.",
+        "update_installing_title": "Обновление FreebudsMAC до v%@…",
+        "update_downloading_status": "Загрузка пакета обновления (DMG)…",
+        "update_extracting_status": "Распаковка и замена приложения…",
+        "update_relaunching_status": "Перезапуск FreebudsMAC…",
+        "update_install_failed_body": "Автоматическая установка не удалась (%@). Открытие страницы загрузки в браузере.",
+        "toolbar_new_version": "Доступна новая версия"
     ]
 }

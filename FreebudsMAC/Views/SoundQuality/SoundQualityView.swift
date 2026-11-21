@@ -7,6 +7,8 @@ struct SoundQualityView: View {
     @ObservedObject var manager: DeviceManager
 
     @State private var qualityPreference: String = "sqp_quality"
+    @State private var lowLatency: Bool = false
+    @State private var autoPause: Bool = true
     @State private var selectedPreset: String = "equalizer_preset_default"
     @State private var presetOptions: [String] = ["equalizer_preset_default"]
     @State private var sliderValues: [Double] = Array(repeating: 0.0, count: 10)
@@ -16,9 +18,9 @@ struct SoundQualityView: View {
     private let frequencies = ["31Hz", "62Hz", "125Hz", "250Hz", "500Hz", "1kHz", "2kHz", "4kHz", "8kHz", "16kHz"]
 
     var body: some View {
-        Form {
-            if manager.state == .disconnected || manager.state == .failed {
-                Section {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if manager.state == .disconnected || manager.state == .failed {
                     HStack(spacing: 12) {
                         Image(systemName: "exclamationmark.triangle.fill")
                             .foregroundColor(.orange)
@@ -30,95 +32,165 @@ struct SoundQualityView: View {
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
+                        Spacer()
                     }
-                    .padding(.vertical, 4)
-                }
-            } else if manager.state == .wait {
-                Section {
+                    .padding(14)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color.orange.opacity(0.12)))
+                } else if manager.state == .wait {
                     HStack(spacing: 12) {
                         ProgressView()
+                            .controlSize(.small)
                         Text(L10n.tr("state_wait"))
                             .font(.headline)
+                        Spacer()
                     }
-                    .padding(.vertical, 4)
+                    .padding(14)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color(NSColor.controlBackgroundColor)))
                 }
-            }
 
-            // 1. Sound Quality Priority Mode
-            Section(L10n.tr("sound_quality_preference")) {
-                Picker(L10n.tr("priority_mode"), selection: Binding(
-                    get: { qualityPreference },
-                    set: { newValue in
-                        qualityPreference = newValue
-                        Task {
-                            try? await manager.setProperty(group: "sound", prop: "quality_preference", value: newValue)
+                // 1. Sound Quality Priority & Smart Playback Options Card
+                VStack(alignment: .leading, spacing: 12) {
+                    Label(L10n.tr("sound_quality_preference"), systemImage: "waveform.badge.magnifyingglass")
+                        .font(.headline)
+
+                    Divider()
+
+                    HStack {
+                        Text(L10n.tr("priority_mode"))
+                            .font(.subheadline)
+                        Spacer()
+                        Picker("", selection: Binding(
+                            get: { qualityPreference },
+                            set: { newValue in
+                                qualityPreference = newValue
+                                Task {
+                                    try? await manager.setProperty(group: "sound", prop: "quality_preference", value: newValue)
+                                }
+                            }
+                        )) {
+                            Text(L10n.tr("prioritize_sound_quality")).tag("sqp_quality")
+                            Text(L10n.tr("prioritize_connection")).tag("sqp_connectivity")
+                        }
+                        .labelsHidden()
+                        .pickerStyle(.menu)
+                        .frame(width: 240)
+                    }
+
+                    HStack {
+                        Text(L10n.tr("low_latency_mode"))
+                            .font(.subheadline)
+                        Spacer()
+                        Toggle("", isOn: Binding(
+                            get: { lowLatency },
+                            set: { newValue in
+                                lowLatency = newValue
+                                Task {
+                                    try? await manager.setProperty(group: "config", prop: "low_latency", value: newValue ? "true" : "false")
+                                }
+                            }
+                        ))
+                        .labelsHidden()
+                        .toggleStyle(.switch)
+                    }
+
+                    HStack {
+                        Text(L10n.tr("auto_pause"))
+                            .font(.subheadline)
+                        Spacer()
+                        Toggle("", isOn: Binding(
+                            get: { autoPause },
+                            set: { newValue in
+                                autoPause = newValue
+                                Task {
+                                    try? await manager.setProperty(group: "config", prop: "auto_pause", value: newValue ? "true" : "false")
+                                }
+                            }
+                        ))
+                        .labelsHidden()
+                        .toggleStyle(.switch)
+                    }
+                }
+                .padding(16)
+                .background(RoundedRectangle(cornerRadius: 12).fill(Color(NSColor.controlBackgroundColor)))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.primary.opacity(0.08), lineWidth: 1))
+
+                // 2. Preset & 10-Band Graphic Equalizer Card
+                VStack(alignment: .leading, spacing: 14) {
+                    HStack {
+                        Label(L10n.tr("ten_band_equalizer"), systemImage: "slider.vertical.3")
+                            .font(.headline)
+
+                        Spacer()
+
+                        Text(L10n.tr("preset"))
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        Picker("", selection: Binding(
+                            get: { selectedPreset },
+                            set: { newValue in
+                                selectedPreset = newValue
+                                Task {
+                                    try? await manager.setProperty(group: "sound", prop: "equalizer_preset", value: newValue)
+                                    await refreshSoundData()
+                                }
+                            }
+                        )) {
+                            ForEach(presetOptions, id: \.self) { opt in
+                                Text(formatPresetName(opt)).tag(opt)
+                            }
+                        }
+                        .labelsHidden()
+                        .pickerStyle(.menu)
+                        .frame(width: 180)
+                    }
+
+                    Divider()
+
+                    // Vertical Fader Rack
+                    HStack(spacing: 6) {
+                        ForEach(0..<10, id: \.self) { idx in
+                            VStack(spacing: 8) {
+                                Text("\(Int(sliderValues[idx]))dB")
+                                    .font(.system(size: 10, weight: .bold, design: .monospaced))
+                                    .foregroundColor(sliderValues[idx] != 0 ? .accentColor : .secondary)
+
+                                CustomVerticalSlider(value: $sliderValues[idx], onChange: {
+                                    changesSaved = false
+                                })
+                                .frame(height: 130)
+
+                                Text(frequencies[idx])
+                                    .font(.system(size: 9, weight: .semibold))
+                                    .foregroundColor(.secondary)
+                            }
+                            .frame(maxWidth: .infinity)
                         }
                     }
-                )) {
-                    Text(L10n.tr("prioritize_sound_quality")).tag("sqp_quality")
-                    Text(L10n.tr("prioritize_connection")).tag("sqp_connectivity")
-                }
-                .pickerStyle(.radioGroup)
-            }
+                    .padding(.vertical, 8)
 
-            // 2. Preset Selection
-            Section(L10n.tr("equalizer_presets")) {
-                Picker(L10n.tr("preset"), selection: Binding(
-                    get: { selectedPreset },
-                    set: { newValue in
-                        selectedPreset = newValue
-                        Task {
-                            try? await manager.setProperty(group: "sound", prop: "equalizer_preset", value: newValue)
-                            await refreshSoundData()
+                    HStack(spacing: 12) {
+                        Button(L10n.tr("save")) {
+                            saveEqualizer()
                         }
-                    }
-                )) {
-                    ForEach(presetOptions, id: \.self) { opt in
-                        Text(formatPresetName(opt)).tag(opt)
-                    }
-                }
-            }
+                        .buttonStyle(.borderedProminent)
+                        .disabled(changesSaved)
 
-            // 3. 10-Band Graphic Equalizer Faders
-            Section(L10n.tr("ten_band_equalizer")) {
-                // Vertical Fader Rack
-                HStack(spacing: 6) {
-                    ForEach(0..<10, id: \.self) { idx in
-                        VStack(spacing: 8) {
-                            Text("\(Int(sliderValues[idx]))dB")
-                                .font(.system(size: 10, weight: .bold, design: .monospaced))
-                                .foregroundColor(sliderValues[idx] != 0 ? .accentColor : .secondary)
-
-                            CustomVerticalSlider(value: $sliderValues[idx], onChange: {
-                                changesSaved = false
-                            })
-                            .frame(height: 130)
-
-                            Text(frequencies[idx])
-                                .font(.system(size: 9, weight: .semibold))
-                                .foregroundColor(.secondary)
+                        Button(L10n.tr("reset")) {
+                            sliderValues = Array(repeating: 0.0, count: 10)
+                            saveEqualizer()
                         }
-                        .frame(maxWidth: .infinity)
+                        .buttonStyle(.bordered)
+
+                        Spacer()
                     }
                 }
-                .padding(.vertical, 10)
-
-                HStack(spacing: 12) {
-                    Button(L10n.tr("save")) {
-                        saveEqualizer()
-                    }
-                    .disabled(changesSaved)
-
-                    Button(L10n.tr("reset")) {
-                        sliderValues = Array(repeating: 0.0, count: 10)
-                        saveEqualizer()
-                    }
-
-                    Spacer()
-                }
+                .padding(16)
+                .background(RoundedRectangle(cornerRadius: 12).fill(Color(NSColor.controlBackgroundColor)))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.primary.opacity(0.08), lineWidth: 1))
             }
+            .padding(20)
         }
-        .padding()
         .task {
             await refreshSoundData()
             let (id, stream) = await manager.eventBus.subscribe()
@@ -172,6 +244,10 @@ struct SoundQualityView: View {
             if let saved = sound["equalizer_saved"] {
                 self.changesSaved = (saved == "true")
             }
+        }
+        if let cfg = await manager.getProperty(group: "config", prop: nil, fallback: nil) as? [String: String] {
+            if let ll = cfg["low_latency"] { self.lowLatency = (ll == "true") }
+            if let ap = cfg["auto_pause"] { self.autoPause = (ap == "true") }
         }
     }
 }

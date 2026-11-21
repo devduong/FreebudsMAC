@@ -246,6 +246,38 @@ enum L10n_EN {
         "low_battery_critical_title": "⚠️ Battery Critical",
         "low_battery_critical_body": "Battery at %d%%. Please charge your earbuds soon.",
         "low_battery_title": "🔋 Low Battery",
-        "low_battery_body": "Battery at %d%%."
+        "low_battery_body": "Battery at %d%%.",
+
+        // UI / Theme Simplification
+        "tab_overview": "Overview & Device",
+        "tab_settings_unified": "Settings",
+        "theme_title": "Appearance",
+        "theme_system": "System",
+        "theme_light": "Light",
+        "theme_dark": "Dark",
+        "theme_toggle_hint": "Quick toggle Light / Dark appearance",
+
+        // Update Checker
+        "menu_check_updates": "Check for Updates…",
+        "check_for_updates_btn": "Check for Updates",
+        "checking_updates": "Checking for updates…",
+        "auto_check_updates_toggle": "Automatically check for updates on launch",
+        "update_available_title": "New Version Available: v%@",
+        "update_available_body": "A new version of FreebudsMAC (v%@) is available on GitHub (Current version: v%@).\n\nClick \"Update & Relaunch\" to automatically download, replace the current app, and restart.",
+        "update_release_notes": "Release Notes:",
+        "update_btn_download": "Update & Relaunch",
+        "update_btn_later": "Remind Me Later",
+        "update_btn_skip_version": "Skip This Version",
+        "update_btn_never_remind": "Never Remind Again",
+        "update_up_to_date_title": "You're Up to Date!",
+        "update_up_to_date_body": "FreebudsMAC v%@ is currently the latest version available.",
+        "update_error_title": "Unable to Check for Updates",
+        "update_error_body": "Could not connect to GitHub public repository. Please check your internet connection or visit GitHub Releases directly.",
+        "update_installing_title": "Updating FreebudsMAC to v%@…",
+        "update_downloading_status": "Downloading update package (DMG)…",
+        "update_extracting_status": "Extracting and replacing application…",
+        "update_relaunching_status": "Relaunching FreebudsMAC…",
+        "update_install_failed_body": "Automatic installation failed (%@). Opening download page in browser instead.",
+        "toolbar_new_version": "New version available"
     ]
 }

@@ -10,7 +10,7 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B%20%7C%206.0-orange?style=flat-square&logo=swift)](https://swift.org)
 [![Architecture](https://img.shields.io/badge/Kiến_trúc-Universal%20(arm64%20%2B%20x86__64)-purple?style=flat-square)](#)
 [![License](https://img.shields.io/badge/Giấy_phép-GPL--3.0-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![Release](https://img.shields.io/badge/Phiên_bản-0.18.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
+[![Release](https://img.shields.io/badge/Phiên_bản-0.19.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
 
 ---
 
@@ -43,6 +43,9 @@
 - ⚡ **Chế độ Độ Trễ Thấp (Low Latency Gaming Mode)**: Giảm tối đa độ trễ truyền âm thanh khi chơi game hoặc dựng video.
 - ⌨️ **Phím tắt Toàn Hệ thống (Global Hotkeys)**: Bộ phím tắt tiện lợi (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) hoạt động nhạy bén ngay cả khi app đang chạy ẩn dưới khay Menu Bar.
 - 🔔 **Thông báo Pin Yếu Tự Động Ẩn**: Gửi banner thông báo native khi pin tai nghe còn 20% và 10% (tự động biến mất sau 5 giây không làm phiền màn hình).
+- 🌓 **Chuyển Nhanh Giao Diện Sáng / Tối**: Nút icon Mặt trời / Mặt trăng trên thanh Toolbar và chân Sidebar cho phép đảo nhanh giao diện **Sáng (Light)**, **Tối (Dark)** và **Hệ thống (System)** chỉ với 1 cú click.
+- 🖥️ **Tự Động Ẩn / Hiện Icon trên Dock Thông Minh**: Khi mở giao diện chính, icon ứng dụng xuất hiện trên thanh Dock; khi bấm nút `"x"` đóng cửa sổ, icon tự động ẩn khỏi Dock và tiếp tục chạy ngầm gọn gàng trên thanh Menu Bar.
+- 🔄 **Kiểm Tra & Tự Động Cập Nhật Ghi Đè (In-Place Auto-Updater)**: Tự động kiểm tra phiên bản mới từ kho lưu trữ GitHub công khai với nút **"Cập nhật & Khởi động lại"** (tự tải `.dmg`, giải nén, ghi đè ứng dụng hiện tại và khởi động lại), kèm tùy chọn *"Bỏ qua phiên bản này"* và *"Không bao giờ nhắc lại"*.
 - 🚀 **Hiệu năng Vượt trội**: Ứng dụng native siêu nhẹ, khởi động tức thì, tiêu thụ RAM dưới 30 MB và gần như 0% CPU.
 - 🌐 **Đa ngôn ngữ Linh hoạt**: Hỗ trợ sẵn Tiếng Việt, Tiếng Anh (English), Tiếng Trung Giản Thể (简体中文), Tiếng Trung Phồn Thể (繁體中文), Tiếng Nga (Русский) và Tiếng Pháp (Français).
 
@@ -118,10 +121,10 @@ Mở tệp `.dmg` đã tải về và kéo biểu tượng **FreebudsMAC.app** v
 
 ## 🛡️ Hướng Dẫn Cấp Quyền Hệ Thống
 
-Để ứng dụng phát huy tối đa 100% công năng, hãy mở **Cài đặt FreebudsMAC > Cài đặt macOS** để kiểm tra và cấp 3 quyền cốt lõi:
+Để ứng dụng phát huy tối đa 100% công năng, hãy mở **FreebudsMAC > Cài đặt > Quyền hệ thống** để kiểm tra và cấp 3 quyền cốt lõi:
 
 ```
-Cài đặt FreebudsMAC ➔ Cài đặt macOS
+FreebudsMAC ➔ Cài đặt ➔ Quyền hệ thống
 ├── 1. Quyền Bluetooth   ➔ Bắt buộc (Quét & truyền nhận lệnh với tai nghe)
 ├── 2. Quyền Thông báo   ➔ Báo pin yếu (Nên chọn kiểu Biểu ngữ / Banners)
 └── 3. Quyền Trợ năng    ➔ Lắng nghe phím tắt toàn hệ thống khi chạy ẩn

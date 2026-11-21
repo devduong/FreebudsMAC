@@ -4,17 +4,55 @@ import SwiftUI
 import OFBPlatform
 import OFBCore
 
+private enum AboutSubTab: String, CaseIterable, Identifiable {
+    case info
+    case supportedDevices
+
+    var id: String { rawValue }
+}
+
 struct AboutView: View {
+    @State private var subTab: AboutSubTab = .info
+    @ObservedObject private var updateChecker = UpdateChecker.shared
+
     var body: some View {
+        VStack(spacing: 0) {
+            // Segmented Header Bar (About | Supported Devices)
+            HStack {
+                Picker("", selection: $subTab) {
+                    Text(L10n.tr("tab_about")).tag(AboutSubTab.info)
+                    Text(L10n.tr("tab_supported_devices")).tag(AboutSubTab.supportedDevices)
+                }
+                .labelsHidden()
+                .pickerStyle(.segmented)
+                .frame(maxWidth: 340)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 12)
+            .frame(maxWidth: .infinity)
+            .background(Color(NSColor.windowBackgroundColor))
+
+            Divider()
+
+            switch subTab {
+            case .info:
+                aboutInfoContent
+            case .supportedDevices:
+                SupportedDevicesView()
+            }
+        }
+    }
+
+    private var aboutInfoContent: some View {
         ScrollView {
             VStack(spacing: 20) {
                 Image(systemName: "headphones")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 72, height: 72)
+                    .frame(width: 68, height: 68)
                     .foregroundColor(.accentColor)
 
-                VStack(spacing: 4) {
+                VStack(spacing: 8) {
                     Text(AppVersion.appName)
                         .font(.title)
                         .bold()
@@ -22,6 +60,28 @@ struct AboutView: View {
                     Text(AppVersion.displayVersion)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+
+                    Button(action: {
+                        Task {
+                            await updateChecker.checkForUpdates(isManual: true)
+                        }
+                    }) {
+                        HStack(spacing: 6) {
+                            if updateChecker.isChecking {
+                                ProgressView()
+                                    .controlSize(.small)
+                                Text(L10n.tr("checking_updates"))
+                            } else {
+                                Image(systemName: "arrow.triangle.2.circlepath")
+                                Text(L10n.tr("check_for_updates_btn"))
+                            }
+                        }
+                        .font(.caption)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.small)
+                    .disabled(updateChecker.isChecking)
+                    .padding(.top, 4)
                 }
 
                 Text(L10n.tr("about_app_description"))
@@ -60,8 +120,7 @@ struct AboutView: View {
                     Link(L10n.tr("license"), destination: URL(string: "https://www.gnu.org/licenses/gpl-3.0.html")!)
                 }
             }
-            .padding(20)
+            .padding(24)
         }
     }
 }
-

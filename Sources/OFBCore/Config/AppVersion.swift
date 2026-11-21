@@ -6,7 +6,7 @@ import Foundation
 /// Single source of truth for Application Name, Version, Build Number and Architecture.
 public enum AppVersion {
     public static let appName = "FreebudsMAC"
-    public static let version = "0.18.0"
+    public static let version = "0.19.0"
     public static let buildNumber = "1"
     public static let architecture = "Universal"
     

@@ -43,8 +43,17 @@ public enum PlatformServices {
         return AXIsProcessTrusted()
     }
 
-    /// Request accessibility permission prompt from macOS
+    /// Request accessibility permission prompt from macOS.
+    /// Resets any stale TCC entry (from previous ad-hoc signed builds/updates) before prompting
+    /// so macOS registers the current binary's CDHash cleanly.
     public static func requestAccessibilityPermission() {
+        if !AXIsProcessTrusted() {
+            let proc = Process()
+            proc.executableURL = URL(fileURLWithPath: "/usr/bin/tccutil")
+            proc.arguments = ["reset", "Accessibility", "pw.mmk.FreebudsMAC"]
+            try? proc.run()
+            proc.waitUntilExit()
+        }
         let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true]
         let trusted = AXIsProcessTrustedWithOptions(options)
         if !trusted {

@@ -246,6 +246,38 @@ enum L10n_FR {
         "low_battery_critical_title": "⚠️ Batterie critique",
         "low_battery_critical_body": "Batterie à %d%%. Veuillez charger vos écouteurs bientôt.",
         "low_battery_title": "🔋 Batterie faible",
-        "low_battery_body": "Batterie à %d%%."
+        "low_battery_body": "Batterie à %d%%.",
+
+        // UI / Theme Simplification
+        "tab_overview": "Aperçu & Appareil",
+        "tab_settings_unified": "Réglages",
+        "theme_title": "Apparence",
+        "theme_system": "Système",
+        "theme_light": "Clair",
+        "theme_dark": "Sombre",
+        "theme_toggle_hint": "Basculer entre le mode Clair et Sombre",
+
+        // Update Checker
+        "menu_check_updates": "Rechercher des mises à jour…",
+        "check_for_updates_btn": "Rechercher des mises à jour",
+        "checking_updates": "Recherche en cours…",
+        "auto_check_updates_toggle": "Vérifier automatiquement les mises à jour au démarrage",
+        "update_available_title": "Nouvelle version disponible : v%@",
+        "update_available_body": "Une nouvelle version de FreebudsMAC (v%@) est disponible sur le dépôt public (Version actuelle : v%@).\n\nCliquez sur « Mettre à jour et relancer » pour télécharger et remplacer automatiquement l'application.",
+        "update_release_notes": "Notes de version :",
+        "update_btn_download": "Mettre à jour et relancer",
+        "update_btn_later": "Plus tard",
+        "update_btn_skip_version": "Ignorer cette version",
+        "update_btn_never_remind": "Ne plus jamais rappeler",
+        "update_up_to_date_title": "Votre application est à jour !",
+        "update_up_to_date_body": "FreebudsMAC v%@ est actuellement la dernière version disponible.",
+        "update_error_title": "Impossible de vérifier les mises à jour",
+        "update_error_body": "Impossible de se connecter au dépôt GitHub public. Veuillez vérifier votre connexion Internet.",
+        "update_installing_title": "Mise à jour de FreebudsMAC vers v%@…",
+        "update_downloading_status": "Téléchargement du paquet de mise à jour (DMG)…",
+        "update_extracting_status": "Extraction et remplacement de l'application…",
+        "update_relaunching_status": "Relancement de FreebudsMAC…",
+        "update_install_failed_body": "L'installation automatique a échoué (%@). Ouverture de la page de téléchargement dans le navigateur.",
+        "toolbar_new_version": "Nouvelle version disponible"
     ]
 }

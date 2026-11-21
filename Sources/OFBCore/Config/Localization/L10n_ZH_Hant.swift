@@ -246,6 +246,38 @@ enum L10n_ZH_Hant {
         "low_battery_critical_title": "⚠️ 電量極低",
         "low_battery_critical_body": "耳機電量僅剩 %d%%，請盡快放入充電盒充電。",
         "low_battery_title": "🔋 低電量提醒",
-        "low_battery_body": "目前電量為 %d%%。"
+        "low_battery_body": "目前電量為 %d%%。",
+
+        // UI / Theme Simplification
+        "tab_overview": "概覽與裝置",
+        "tab_settings_unified": "設定",
+        "theme_title": "外觀模式",
+        "theme_system": "跟隨系統",
+        "theme_light": "淺色",
+        "theme_dark": "深色",
+        "theme_toggle_hint": "快速切換淺色 / 深色外觀",
+
+        // Update Checker
+        "menu_check_updates": "檢查更新…",
+        "check_for_updates_btn": "檢查更新",
+        "checking_updates": "正在檢查更新…",
+        "auto_check_updates_toggle": "啟動時自動檢查更新",
+        "update_available_title": "發現新版本：v%@",
+        "update_available_body": "公開儲存庫已發佈 FreebudsMAC 新版本 v%@（目前版本：v%@）。\n\n點擊「自動更新並重啟」即可自動下載、覆蓋目前應用並重新啟動。",
+        "update_release_notes": "更新內容：",
+        "update_btn_download": "自動更新並重啟",
+        "update_btn_later": "稍後提醒",
+        "update_btn_skip_version": "略過此版本",
+        "update_btn_never_remind": "永不提醒",
+        "update_up_to_date_title": "目前已是最新版本！",
+        "update_up_to_date_body": "FreebudsMAC v%@ 已是目前最新發佈版本。",
+        "update_error_title": "無法檢查更新",
+        "update_error_body": "無法連線至 GitHub 公開儲存庫，請檢查網路連線或直接造訪 GitHub Releases 頁面。",
+        "update_installing_title": "正在更新 FreebudsMAC 至 v%@…",
+        "update_downloading_status": "正在下載更新映像檔 (DMG)…",
+        "update_extracting_status": "正在解壓縮並覆蓋目前應用…",
+        "update_relaunching_status": "正在重新啟動 FreebudsMAC…",
+        "update_install_failed_body": "自動安裝失敗（%@），正在瀏覽器中開啟下載頁面。",
+        "toolbar_new_version": "發現新版本"
     ]
 }

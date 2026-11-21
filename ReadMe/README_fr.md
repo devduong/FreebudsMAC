@@ -10,7 +10,7 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B%20%7C%206.0-orange?style=flat-square&logo=swift)](https://swift.org)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-purple?style=flat-square)](#)
 [![Licence](https://img.shields.io/badge/Licence-GPL--3.0-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![Version](https://img.shields.io/badge/Version-0.18.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
+[![Version](https://img.shields.io/badge/Version-0.19.0-success?style=flat-square)](https://github.com/devduong/FreebudsMAC/releases)
 
 ---
 
@@ -43,6 +43,9 @@
 - ⚡ **Mode faible latence pour le jeu** : Réduction du délai de transmission audio pour le gaming et le montage vidéo.
 - ⌨️ **Raccourcis clavier globaux** : Raccourcis système (`⌥⌘A`, `⌥⌘C`, `⌥⌘0`, `⌥⌘1`, `⌥⌘2`, `⌥⌘L`) accessibles depuis n'importe quelle application.
 - 🔔 **Notifications de batterie faible auto-masquantes** : Alertes natives discrètes à 20% et 10% (se ferment automatiquement après 5 secondes).
+- 🌓 **Bascule rapide du thème Clair / Sombre** : Bouton d'apparence en un clic (**Clair**, **Sombre**, **Système**) directement dans la barre d'outils de la fenêtre et en bas de la barre latérale.
+- 🖥️ **Gestion intelligente de l'icône du Dock et de la barre des menus** : L'icône s'affiche dans le Dock lorsque la fenêtre principale est ouverte et disparaît automatiquement du Dock à la fermeture (`"x"`), tout en restant active dans la barre des menus.
+- 🔄 **Mise à jour automatique sur place (In-Place Auto-Updater)** : Vérifie automatiquement les nouvelles versions sur le dépôt GitHub public avec le bouton **« Mettre à jour et relancer »** (télécharge le `.dmg`, remplace l'application `.app` et redémarre), ainsi que les options *« Ignorer cette version »* et *« Ne plus jamais rappeler »*.
 - 🚀 **Performances et légèreté** : Application Swift native ultra-légère, lancement instantané, consommation RAM < 30 Mo et CPU quasi nul.
 - 🌐 **Support multilingue** : Interface disponible en Français, Anglais, Vietnamien, Chinois simplifié (简体中文), Chinois traditionnel (繁體中文) et Russe.
 
@@ -118,10 +121,10 @@ Ouvrez le fichier `.dmg` téléchargé et glissez **FreebudsMAC.app** dans votre
 
 ## 🛡️ Guide des autorisations système macOS
 
-Pour profiter de toutes les fonctionnalités, ouvrez **Réglages FreebudsMAC > Réglages macOS** et configurez les 3 autorisations :
+Pour profiter de toutes les fonctionnalités, ouvrez **FreebudsMAC > Réglages > Autorisations système** et configurez les 3 autorisations :
 
 ```
-Réglages FreebudsMAC ➔ Réglages macOS
+FreebudsMAC ➔ Réglages ➔ Autorisations système
 ├── 1. Autorisation Bluetooth     ➔ Obligatoire (Communication SPP/BLE avec les écouteurs)
 ├── 2. Autorisation Notifications ➔ Alertes batterie faible (Style : Bannières)
 └── 3. Autorisation Accessibilité ➔ Écoute des raccourcis clavier globaux

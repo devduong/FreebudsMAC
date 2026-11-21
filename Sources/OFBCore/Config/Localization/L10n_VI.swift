@@ -246,6 +246,38 @@ enum L10n_VI {
         "low_battery_critical_title": "⚠️ Pin rất thấp",
         "low_battery_critical_body": "Pin ở mức %d%%. Hãy sạc tai nghe sớm.",
         "low_battery_title": "🔋 Pin yếu",
-        "low_battery_body": "Pin ở mức %d%%."
+        "low_battery_body": "Pin ở mức %d%%.",
+
+        // UI / Theme Simplification
+        "tab_overview": "Tổng quan & Thiết bị",
+        "tab_settings_unified": "Cài đặt",
+        "theme_title": "Giao diện Sáng / Tối",
+        "theme_system": "Hệ thống",
+        "theme_light": "Sáng",
+        "theme_dark": "Tối",
+        "theme_toggle_hint": "Chuyển nhanh giao diện Sáng / Tối",
+
+        // Update Checker
+        "menu_check_updates": "Kiểm tra cập nhật…",
+        "check_for_updates_btn": "Kiểm tra cập nhật",
+        "checking_updates": "Đang kiểm tra…",
+        "auto_check_updates_toggle": "Tự động kiểm tra cập nhật khi mở ứng dụng",
+        "update_available_title": "Đã có phiên bản mới: v%@",
+        "update_available_body": "FreebudsMAC đã có phiên bản mới v%@ trên kho lưu trữ công khai (Phiên bản hiện tại: v%@).\n\nBấm \"Cập nhật & Khởi động lại\" để tự động tải về, ghi đè ứng dụng hiện tại và mở lại ngay.",
+        "update_release_notes": "Nội dung cập nhật:",
+        "update_btn_download": "Cập nhật & Khởi động lại",
+        "update_btn_later": "Để sau",
+        "update_btn_skip_version": "Bỏ qua phiên bản này",
+        "update_btn_never_remind": "Không bao giờ nhắc lại",
+        "update_up_to_date_title": "Bạn đang dùng phiên bản mới nhất!",
+        "update_up_to_date_body": "FreebudsMAC v%@ hiện là phiên bản mới nhất trên hệ thống.",
+        "update_error_title": "Không thể kiểm tra cập nhật",
+        "update_error_body": "Không thể kết nối tới kho lưu trữ GitHub công khai. Vui lòng kiểm tra kết nối mạng hoặc mở trực tiếp trang GitHub Releases.",
+        "update_installing_title": "Đang cập nhật FreebudsMAC lên v%@…",
+        "update_downloading_status": "Đang tải gói cập nhật (.dmg) từ GitHub…",
+        "update_extracting_status": "Đang giải nén và ghi đè ứng dụng hiện tại…",
+        "update_relaunching_status": "Đang khởi động lại phiên bản mới…",
+        "update_install_failed_body": "Cài đặt tự động thất bại (%@). Hệ thống sẽ mở trang tải trực tiếp trên trình duyệt.",
+        "toolbar_new_version": "Có phiên bản mới"
     ]
 }
